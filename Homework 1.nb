@@ -1,0 +1,931 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     36935,        923]
+NotebookOptionsPosition[     34516,        875]
+NotebookOutlinePosition[     34942,        892]
+CellTagsIndexPosition[     34899,        889]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"Clear", "[", "\"\<Global`*\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.9146091325826483`*^9, 3.914609160787224*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"cb2f2df2-a7fd-443e-ab74-26246b2f40b5"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"c", "=", 
+   RowBox[{"(", 
+    FractionBox[
+     RowBox[{"M", 
+      RowBox[{"(", 
+       RowBox[{"1", "-", 
+        SuperscriptBox["M", "2"]}], ")"}], 
+      RowBox[{"Sin", "[", "\[Alpha]", "]"}]}], 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"1", "+", 
+        SuperscriptBox["M", "2"], "-", 
+        RowBox[{"2", "M", 
+         RowBox[{"(", 
+          RowBox[{"Cos", "[", "\[Alpha]", "]"}], ")"}]}]}], ")"}], "2"]], 
+    ")"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"c2Print", "=", 
+   RowBox[{"ToString", "[", 
+    RowBox[{"TraditionalForm", "[", "c", "]"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"n", "=", "10"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"M", "=", 
+   FractionBox["1", 
+    RowBox[{"Sin", "[", 
+     RowBox[{"\[Pi]", "/", "n"}], "]"}]]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"\[Alpha]", "=", 
+    RowBox[{"ArcCos", "[", 
+     RowBox[{
+      SqrtBox[
+       RowBox[{
+        SuperscriptBox[
+         RowBox[{"(", 
+          FractionBox[
+           RowBox[{"1", "+", 
+            SuperscriptBox["M", "2"]}], 
+           RowBox[{"4", "M"}]], ")"}], "2"], "+", "2"}]], "-", 
+      FractionBox[
+       RowBox[{"1", "+", 
+        SuperscriptBox["M", "2"]}], 
+       RowBox[{"4", "M"}]]}], "]"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Print", "[", 
+  RowBox[{
+   RowBox[{"Style", "[", 
+    RowBox[{"\"\<Solving Problem \>\"", ",", 
+     RowBox[{"{", " ", 
+      RowBox[{
+       RowBox[{"FontFamily", "->", "\"\<Times\>\""}], ",", "16", ",", 
+       "Purple", ",", "Bold", ",", " ", "Italic"}], "}"}]}], "]"}], ",", 
+   RowBox[{"Style", "[", 
+    RowBox[{"\"\<1\>\"", ",", 
+     RowBox[{"{", 
+      RowBox[{"16", ",", "Magenta", ",", " ", "Bold"}], "}"}]}], "]"}], ",", 
+   "\"\<\\n\>\"", ",", 
+   RowBox[{"\"\<c = \>\"", "<>", " ", "c2Print"}], ",", "\"\< = \>\"", ",", 
+   RowBox[{"N", "[", "c", "]"}]}], "]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.9146087072926435`*^9, 3.9146090385104856`*^9}, {
+  3.9146090772740507`*^9, 3.914609079755153*^9}, {3.9146092293667765`*^9, 
+  3.914609238881711*^9}, {3.914609270148194*^9, 3.914609324746168*^9}, {
+  3.9147069414969893`*^9, 3.914707105843571*^9}, {3.9147073130017366`*^9, 
+  3.914707317339537*^9}, {3.914707352057479*^9, 3.914707358593705*^9}, {
+  3.914707763940137*^9, 3.9147077702429705`*^9}, {3.9147078693269796`*^9, 
+  3.9147078694765882`*^9}, {3.914708092990198*^9, 3.914708130547389*^9}, {
+  3.914714848651504*^9, 3.9147150041088533`*^9}, {3.9147150602001076`*^9, 
+  3.914715106214885*^9}, {3.9147151443397913`*^9, 3.91471521349707*^9}, {
+  3.91471525726483*^9, 3.9147152576652036`*^9}, {3.914715465865025*^9, 
+  3.9147154795001183`*^9}, {3.914948998906039*^9, 3.914949115512459*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"b2be36bb-511c-4071-9d9b-1ce0545b2a72"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   StyleBox["\<\"Solving Problem \"\>",
+    StripOnInput->False,
+    LineColor->RGBColor[0.5, 0, 0.5],
+    FrontFaceColor->RGBColor[0.5, 0, 0.5],
+    BackFaceColor->RGBColor[0.5, 0, 0.5],
+    GraphicsColor->RGBColor[0.5, 0, 0.5],
+    FontFamily->"Times",
+    FontSize->16,
+    FontWeight->Bold,
+    FontSlant->Italic,
+    FontColor->RGBColor[0.5, 0, 0.5]], "\[InvisibleSpace]", 
+   StyleBox["\<\"1\"\>",
+    StripOnInput->False,
+    LineColor->RGBColor[1, 0, 1],
+    FrontFaceColor->RGBColor[1, 0, 1],
+    BackFaceColor->RGBColor[1, 0, 1],
+    GraphicsColor->RGBColor[1, 0, 1],
+    FontSize->16,
+    FontWeight->Bold,
+    FontColor->RGBColor[1, 0, 1]], "\[InvisibleSpace]", "\<\"\\n\"\>", 
+   "\[InvisibleSpace]", "\<\"c = \\!\\(\\*FormBox[FractionBox[RowBox[{\\\"M\\\
+\", \\\" \\\", RowBox[{\\\"(\\\", RowBox[{\\\"1\\\", \\\"-\\\", \
+SuperscriptBox[\\\"M\\\", \\\"2\\\"]}], \\\")\\\"}], \\\" \\\", \
+RowBox[{\\\"sin\\\", \\\"(\\\", \\\"\[Alpha]\\\", \\\")\\\"}]}], \
+SuperscriptBox[RowBox[{\\\"(\\\", RowBox[{SuperscriptBox[\\\"M\\\", \
+\\\"2\\\"], \\\"-\\\", RowBox[{\\\"2\\\", \\\" \\\", \\\"M\\\", \\\" \\\", \
+RowBox[{\\\"cos\\\", \\\"(\\\", \\\"\[Alpha]\\\", \\\")\\\"}]}], \\\"+\\\", \
+\\\"1\\\"}], \\\")\\\"}], \\\"2\\\"]], TraditionalForm]\\)\"\>", 
+   "\[InvisibleSpace]", "\<\" = \"\>", "\[InvisibleSpace]", 
+   RowBox[{"-", "0.4648438717693757`"}]}],
+  SequenceForm[
+   Style["Solving Problem ", {FontFamily -> "Times", 16, 
+     RGBColor[0.5, 0, 0.5], Bold, Italic}], 
+   Style["1", {16, 
+     RGBColor[1, 0, 1], Bold}], "\n", 
+   "c = \!\(\*FormBox[FractionBox[RowBox[{\"M\", \" \", RowBox[{\"(\", \
+RowBox[{\"1\", \"-\", SuperscriptBox[\"M\", \"2\"]}], \")\"}], \" \", \
+RowBox[{\"sin\", \"(\", \"\[Alpha]\", \")\"}]}], \
+SuperscriptBox[RowBox[{\"(\", RowBox[{SuperscriptBox[\"M\", \"2\"], \"-\", \
+RowBox[{\"2\", \" \", \"M\", \" \", RowBox[{\"cos\", \"(\", \"\[Alpha]\", \")\
+\"}]}], \"+\", \"1\"}], \")\"}], \"2\"]], TraditionalForm]\)", 
+   " = ", -0.4648438717693757],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9150403496030054`*^9},
+ CellLabel->
+  "During evaluation of \
+In[2]:=",ExpressionUUID->"5153e681-1e1c-4c86-9717-0bd706e286fe"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"Problem", " ", "2"}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Clear", "[", 
+    RowBox[{"\[Alpha]", ",", "n", ",", "\[Gamma]"}], "]"}], "\n", 
+   RowBox[{
+    RowBox[{"dRad", "=", 
+     RowBox[{"\[Alpha]", "-", "\[Gamma]", "+", 
+      RowBox[{"ArcSin", "[", 
+       RowBox[{"n", "*", 
+        RowBox[{"Sin", "[", 
+         RowBox[{"\[Gamma]", "-", 
+          RowBox[{"ArcSin", "[", 
+           FractionBox[
+            RowBox[{"Sin", "[", "\[Alpha]", "]"}], "n"], "]"}]}], "]"}]}], 
+       "]"}]}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"dRad2Print", " ", "=", " ", 
+     RowBox[{"ToString", "[", 
+      RowBox[{"TraditionalForm", "[", "dRad", "]"}], "]"}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"\[Gamma]", "=", 
+     RowBox[{"\[Pi]", "/", "3"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"\[Alpha]", "=", 
+     RowBox[{"35", " ", "*", 
+      RowBox[{"Pi", "/", "180"}]}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"n", "=", 
+     RowBox[{"8", "/", "7"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"ans", "=", " ", 
+     RowBox[{"dRad", "//", "N"}]}], ";"}], "\[IndentingNewLine]", "\n", 
+   RowBox[{"Print", "[", 
+    RowBox[{
+     RowBox[{"Style", "[", 
+      RowBox[{"\"\<Solving Problem \>\"", ",", 
+       RowBox[{"{", " ", 
+        RowBox[{
+         RowBox[{"FontFamily", "->", "\"\<Times\>\""}], ",", "16", ",", 
+         "Purple", ",", "Bold", ",", " ", "Italic"}], "}"}]}], "]"}], ",", 
+     RowBox[{"Style", "[", 
+      RowBox[{"\"\<2(a)\>\"", ",", 
+       RowBox[{"{", 
+        RowBox[{"16", ",", "Magenta", ",", " ", "Bold"}], "}"}]}], "]"}], 
+     ",", "\"\<\\n\>\"", ",", "\"\<d = \>\"", ",", " ", "dRad2Print", " ", 
+     ",", "\"\< = \>\"", ",", "ans", ",", " ", "\"\< radians = \>\"", ",", 
+     RowBox[{"ans", "*", 
+      RowBox[{"180", "/", "Pi"}]}], ",", " ", "\"\< degrees\>\""}], 
+    "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.914703640268916*^9, 3.9147036874529524`*^9}, {
+  3.9149503038566985`*^9, 3.9149503041962433`*^9}, {3.914950395576765*^9, 
+  3.9149504068703337`*^9}, {3.9149505606901765`*^9, 3.914950569289366*^9}, {
+  3.9149506358047876`*^9, 3.9149506681005626`*^9}, {3.914954416000696*^9, 
+  3.914954423195431*^9}},
+ CellLabel->"In[8]:=",ExpressionUUID->"2e043183-45b1-42c7-b60a-4224adec36f0"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   StyleBox["\<\"Solving Problem \"\>",
+    StripOnInput->False,
+    LineColor->RGBColor[0.5, 0, 0.5],
+    FrontFaceColor->RGBColor[0.5, 0, 0.5],
+    BackFaceColor->RGBColor[0.5, 0, 0.5],
+    GraphicsColor->RGBColor[0.5, 0, 0.5],
+    FontFamily->"Times",
+    FontSize->16,
+    FontWeight->Bold,
+    FontSlant->Italic,
+    FontColor->RGBColor[0.5, 0, 0.5]], "\[InvisibleSpace]", 
+   StyleBox["\<\"2(a)\"\>",
+    StripOnInput->False,
+    LineColor->RGBColor[1, 0, 1],
+    FrontFaceColor->RGBColor[1, 0, 1],
+    BackFaceColor->RGBColor[1, 0, 1],
+    GraphicsColor->RGBColor[1, 0, 1],
+    FontSize->16,
+    FontWeight->Bold,
+    FontColor->RGBColor[1, 0, 1]], "\[InvisibleSpace]", "\<\"\\n\"\>", 
+   "\[InvisibleSpace]", "\<\"d = \"\>", 
+   "\[InvisibleSpace]", "\<\"\\!\\(\\*FormBox[RowBox[{\\\"\[Alpha]\\\", \\\"-\
+\\\", \\\"\[Gamma]\\\", \\\"+\\\", RowBox[{SuperscriptBox[\\\"sin\\\", \
+RowBox[{\\\"-\\\", \\\"1\\\"}]], \\\"(\\\", RowBox[{\\\"n\\\", \\\" \\\", \
+RowBox[{\\\"sin\\\", \\\"(\\\", RowBox[{\\\"\[Gamma]\\\", \\\"-\\\", \
+RowBox[{SuperscriptBox[\\\"sin\\\", RowBox[{\\\"-\\\", \\\"1\\\"}]], \
+\\\"(\\\", FractionBox[RowBox[{\\\"sin\\\", \\\"(\\\", \\\"\[Alpha]\\\", \
+\\\")\\\"}], \\\"n\\\"], \\\")\\\"}]}], \\\")\\\"}]}], \\\")\\\"}]}], \
+TraditionalForm]\\)\"\>", "\[InvisibleSpace]", "\<\" = \"\>", 
+   "\[InvisibleSpace]", "0.16929509906789825`", 
+   "\[InvisibleSpace]", "\<\" radians = \"\>", "\[InvisibleSpace]", 
+   "9.699894668839727`", "\[InvisibleSpace]", "\<\" degrees\"\>"}],
+  SequenceForm[
+   Style["Solving Problem ", {FontFamily -> "Times", 16, 
+     RGBColor[0.5, 0, 0.5], Bold, Italic}], 
+   Style["2(a)", {16, 
+     RGBColor[1, 0, 1], Bold}], "\n", "d = ", 
+   "\!\(\*FormBox[RowBox[{\"\[Alpha]\", \"-\", \"\[Gamma]\", \"+\", \
+RowBox[{SuperscriptBox[\"sin\", RowBox[{\"-\", \"1\"}]], \"(\", \
+RowBox[{\"n\", \" \", RowBox[{\"sin\", \"(\", RowBox[{\"\[Gamma]\", \"-\", \
+RowBox[{SuperscriptBox[\"sin\", RowBox[{\"-\", \"1\"}]], \"(\", \
+FractionBox[RowBox[{\"sin\", \"(\", \"\[Alpha]\", \")\"}], \"n\"], \")\"}]}], \
+\")\"}]}], \")\"}]}], TraditionalForm]\)", " = ", 0.16929509906789825`, 
+   " radians = ", 9.699894668839727, " degrees"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.915040349651023*^9},
+ CellLabel->
+  "During evaluation of \
+In[8]:=",ExpressionUUID->"93bbc904-2773-4761-903e-e09e05898adc"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[Gamma]", "=", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"Pi", "/", "3"}], ")"}], "*", 
+    RowBox[{"(", 
+     RowBox[{"180", "/", "Pi"}], ")"}]}], ")"}]}]], "Input",
+ CellChangeTimes->{{3.914706741957551*^9, 3.9147067531950483`*^9}, 
+   3.914715326117594*^9, {3.9149531638814344`*^9, 3.9149531691492434`*^9}},
+ CellLabel->"In[16]:=",ExpressionUUID->"527ac966-3b81-4c82-b1e1-59eed91cacd4"],
+
+Cell[BoxData["60"], "Output",
+ CellChangeTimes->{3.915040349686355*^9},
+ CellLabel->"Out[16]=",ExpressionUUID->"8eb56517-c769-466f-8053-c8be4603759c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Clear", "[", 
+  RowBox[{"\[Alpha]", ",", "n", ",", "\[Gamma]"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"angle1", " ", "=", " ", 
+   RowBox[{"N", "[", 
+    RowBox[{
+     RowBox[{"ArcSin", "[", 
+      RowBox[{
+       FractionBox[
+        RowBox[{"Sin", "[", "\[Alpha]", "]"}], "n"], "/.", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"\[Alpha]", "->", 
+          RowBox[{"35", "Degree"}]}], ",", 
+         RowBox[{"n", "->", 
+          RowBox[{"8", "/", "7"}]}]}], "}"}]}], "]"}], "/", "Degree"}], 
+    "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"angle2", " ", "=", " ", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"\[Gamma]", "-", "angle1"}], " ", ")"}], "/.", 
+    RowBox[{"\[Gamma]", "->", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"Pi", "/", "3"}], ")"}], "*", 
+       RowBox[{"(", 
+        RowBox[{"180", "/", "Pi"}], ")"}]}], ")"}]}]}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"angle3", " ", "=", " ", 
+   RowBox[{"N", "[", 
+    RowBox[{
+     RowBox[{"ArcSin", "[", 
+      RowBox[{
+       RowBox[{"n", "*", 
+        RowBox[{"Sin", "[", 
+         RowBox[{"angle2", " ", "Degree"}], "]"}]}], "/.", 
+       RowBox[{"n", "->", 
+        RowBox[{"8", "/", "7"}]}]}], "]"}], "/", "Degree"}], "]"}]}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"dRad", " ", "=", " ", 
+    RowBox[{
+     RowBox[{"\[Alpha]", " ", "-", " ", "\[Gamma]", " ", "+", " ", "angle3"}],
+      "/.", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"\[Alpha]", "->", "35"}], ",", 
+       RowBox[{"\[Gamma]", "->", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"Pi", "/", "3"}], ")"}], "*", 
+          RowBox[{"(", 
+           RowBox[{"180", "/", "Pi"}], ")"}]}], ")"}]}]}], "}"}]}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Print", "[", 
+  RowBox[{
+   RowBox[{"Style", "[", 
+    RowBox[{"\"\<Solving Problem \>\"", ",", 
+     RowBox[{"{", " ", 
+      RowBox[{
+       RowBox[{"FontFamily", "->", "\"\<Times\>\""}], ",", "16", ",", 
+       "Purple", ",", "Bold", ",", " ", "Italic"}], "}"}]}], "]"}], ",", 
+   RowBox[{"Style", "[", 
+    RowBox[{"\"\<2(b)\>\"", ",", 
+     RowBox[{"{", 
+      RowBox[{"16", ",", "Magenta", ",", " ", "Bold"}], "}"}]}], "]"}], ",", 
+   "\"\<\\nangle1 = \>\"", ",", "angle1", ",", " ", 
+   "\"\< degrees \\nangle2 = \>\"", ",", " ", "angle2", ",", 
+   "\"\< degrees\\nangle3 = \>\"", ",", "angle3", ",", "\"\< degrees\\n\>\"", 
+   ",", "\"\<d = \>\"", ",", " ", "dRad2Print", " ", ",", "\"\< = \>\"", ",", 
+   "dRad", ",", " ", "\"\< degrees\>\"", " ", ",", "\"\< = \>\"", ",", " ", 
+   RowBox[{"dRad", 
+    RowBox[{"(", 
+     RowBox[{"Pi", "/", "180"}], ")"}]}], ",", " ", "\"\< radians\>\""}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.9147082732480507`*^9, 3.9147083599252157`*^9}, {
+   3.9147086915291033`*^9, 3.9147087817646985`*^9}, {3.914708875919355*^9, 
+   3.914708891222756*^9}, {3.914708978799627*^9, 3.914708992664894*^9}, {
+   3.9147091807734904`*^9, 3.9147092535223*^9}, {3.9147093019198103`*^9, 
+   3.9147093441182566`*^9}, {3.914709394295989*^9, 3.9147094584802356`*^9}, {
+   3.914715330168548*^9, 3.9147153348292413`*^9}, {3.914715455315137*^9, 
+   3.914715462975993*^9}, {3.9149507610803947`*^9, 3.9149507897827196`*^9}, {
+   3.914950822416858*^9, 3.9149510239566708`*^9}, {3.9149510604254684`*^9, 
+   3.9149510703103676`*^9}, {3.9149511993735943`*^9, 3.914951234466321*^9}, {
+   3.914951486176819*^9, 3.9149515259839983`*^9}, {3.914952561511318*^9, 
+   3.9149526794948134`*^9}, {3.914952719974255*^9, 3.914952787852973*^9}, 
+   3.9149528956333523`*^9, {3.914952956463566*^9, 3.9149529737920313`*^9}, 
+   3.914953011074011*^9, {3.9149531021344547`*^9, 3.9149531264996405`*^9}, {
+   3.91495323270043*^9, 3.9149533009069223`*^9}, 3.914953488396541*^9, {
+   3.9149535295101576`*^9, 3.914953636483423*^9}, {3.9149537596162705`*^9, 
+   3.914953761227996*^9}, {3.9149538411244884`*^9, 3.9149538731899056`*^9}, {
+   3.9149539297479687`*^9, 3.9149539899009795`*^9}, 3.914954447069295*^9, 
+   3.914954561769882*^9},
+ CellLabel->"In[17]:=",ExpressionUUID->"3ce211a9-3eb2-4de6-a694-71646745de82"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   StyleBox["\<\"Solving Problem \"\>",
+    StripOnInput->False,
+    LineColor->RGBColor[0.5, 0, 0.5],
+    FrontFaceColor->RGBColor[0.5, 0, 0.5],
+    BackFaceColor->RGBColor[0.5, 0, 0.5],
+    GraphicsColor->RGBColor[0.5, 0, 0.5],
+    FontFamily->"Times",
+    FontSize->16,
+    FontWeight->Bold,
+    FontSlant->Italic,
+    FontColor->RGBColor[0.5, 0, 0.5]], "\[InvisibleSpace]", 
+   StyleBox["\<\"2(b)\"\>",
+    StripOnInput->False,
+    LineColor->RGBColor[1, 0, 1],
+    FrontFaceColor->RGBColor[1, 0, 1],
+    BackFaceColor->RGBColor[1, 0, 1],
+    GraphicsColor->RGBColor[1, 0, 1],
+    FontSize->16,
+    FontWeight->Bold,
+    FontColor->RGBColor[1, 0, 1]], 
+   "\[InvisibleSpace]", "\<\"\\nangle1 = \"\>", "\[InvisibleSpace]", 
+   "30.12441698853809`", "\[InvisibleSpace]", "\<\" degrees \\nangle2 = \"\>",
+    "\[InvisibleSpace]", "29.87558301146191`", 
+   "\[InvisibleSpace]", "\<\" degrees\\nangle3 = \"\>", "\[InvisibleSpace]", 
+   "34.69989466883971`", "\[InvisibleSpace]", "\<\" degrees\\n\"\>", 
+   "\[InvisibleSpace]", "\<\"d = \"\>", 
+   "\[InvisibleSpace]", "\<\"\\!\\(\\*FormBox[RowBox[{\\\"\[Alpha]\\\", \\\"-\
+\\\", \\\"\[Gamma]\\\", \\\"+\\\", RowBox[{SuperscriptBox[\\\"sin\\\", \
+RowBox[{\\\"-\\\", \\\"1\\\"}]], \\\"(\\\", RowBox[{\\\"n\\\", \\\" \\\", \
+RowBox[{\\\"sin\\\", \\\"(\\\", RowBox[{\\\"\[Gamma]\\\", \\\"-\\\", \
+RowBox[{SuperscriptBox[\\\"sin\\\", RowBox[{\\\"-\\\", \\\"1\\\"}]], \
+\\\"(\\\", FractionBox[RowBox[{\\\"sin\\\", \\\"(\\\", \\\"\[Alpha]\\\", \
+\\\")\\\"}], \\\"n\\\"], \\\")\\\"}]}], \\\")\\\"}]}], \\\")\\\"}]}], \
+TraditionalForm]\\)\"\>", "\[InvisibleSpace]", "\<\" = \"\>", 
+   "\[InvisibleSpace]", "9.699894668839704`", 
+   "\[InvisibleSpace]", "\<\" degrees\"\>", 
+   "\[InvisibleSpace]", "\<\" = \"\>", "\[InvisibleSpace]", 
+   "0.16929509906789786`", "\[InvisibleSpace]", "\<\" radians\"\>"}],
+  SequenceForm[
+   Style["Solving Problem ", {FontFamily -> "Times", 16, 
+     RGBColor[0.5, 0, 0.5], Bold, Italic}], 
+   Style["2(b)", {16, 
+     RGBColor[1, 0, 1], Bold}], "\nangle1 = ", 30.12441698853809, 
+   " degrees \nangle2 = ", 29.87558301146191, " degrees\nangle3 = ", 
+   34.69989466883971, " degrees\n", "d = ", 
+   "\!\(\*FormBox[RowBox[{\"\[Alpha]\", \"-\", \"\[Gamma]\", \"+\", \
+RowBox[{SuperscriptBox[\"sin\", RowBox[{\"-\", \"1\"}]], \"(\", \
+RowBox[{\"n\", \" \", RowBox[{\"sin\", \"(\", RowBox[{\"\[Gamma]\", \"-\", \
+RowBox[{SuperscriptBox[\"sin\", RowBox[{\"-\", \"1\"}]], \"(\", \
+FractionBox[RowBox[{\"sin\", \"(\", \"\[Alpha]\", \")\"}], \"n\"], \")\"}]}], \
+\")\"}]}], \")\"}]}], TraditionalForm]\)", " = ", 9.699894668839704, 
+   " degrees", " = ", 0.16929509906789786`, " radians"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.915040349712428*^9},
+ CellLabel->
+  "During evaluation of \
+In[17]:=",ExpressionUUID->"9310857a-d5ba-464a-8cca-71de623e2699"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{"Problem", " ", "3"}], "*)"}]], "Input",
+ CellChangeTimes->{{3.914706764716982*^9, 3.9147067663583984`*^9}, 
+   3.914715374312443*^9, {3.9149522820617247`*^9, 3.9149522875269146`*^9}},
+ CellLabel->"In[23]:=",ExpressionUUID->"aeb34766-ff36-480a-8879-0916c67020dc"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"z", "=", 
+   RowBox[{
+    RowBox[{"(", 
+     FractionBox[
+      RowBox[{"g", 
+       RowBox[{"(", 
+        SuperscriptBox["x", "2"], ")"}]}], 
+      RowBox[{"2", 
+       RowBox[{"(", 
+        SuperscriptBox["v", "2"], ")"}], 
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{"Cos", "[", "\[Theta]", "]"}], ")"}], "2"]}]], ")"}], "+", 
+    RowBox[{"x", 
+     RowBox[{"(", 
+      RowBox[{"Tan", "[", "\[Theta]", "]"}], ")"}]}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"zVal", "=", 
+   RowBox[{"z", "/.", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"g", "->", "9.81"}], ",", " ", 
+      RowBox[{"\[Theta]", "->", 
+       RowBox[{"17", "\[Degree]"}]}], ",", 
+      RowBox[{"x", "->", "45"}], ",", 
+      RowBox[{"v", "->", "14"}]}], "}"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Print", "[", 
+  RowBox[{
+   RowBox[{"Style", "[", 
+    RowBox[{"\"\<Solving Problem \>\"", ",", 
+     RowBox[{"{", " ", 
+      RowBox[{
+       RowBox[{"FontFamily", "->", "\"\<Times\>\""}], ",", "16", ",", 
+       "Purple", ",", "Bold", ",", " ", "Italic"}], "}"}]}], "]"}], ",", 
+   RowBox[{"Style", "[", 
+    RowBox[{"\"\<3\>\"", ",", 
+     RowBox[{"{", 
+      RowBox[{"16", ",", "Magenta", ",", " ", "Bold"}], "}"}]}], "]"}], ",", 
+   "\"\<\\n\>\"", ",", " ", "\"\<z = \>\"", ",", 
+   RowBox[{
+    RowBox[{"TraditionalForm", "[", "z", "]"}], "/.", 
+    RowBox[{"{", 
+     RowBox[{"v", "->", 
+      SubscriptBox["v", "o"]}], "}"}]}], ",", " ", "\"\< = \>\"", ",", 
+   "zVal"}], "]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.9147095045485086`*^9, 3.9147098118001566`*^9}, {
+   3.9147146604428024`*^9, 3.914714702205206*^9}, 3.9147147345116034`*^9, {
+   3.914715378564262*^9, 3.91471538437471*^9}, 3.9147154519423804`*^9, {
+   3.914951580368513*^9, 3.914951631526039*^9}, {3.914952152182145*^9, 
+   3.9149522051605444`*^9}, 3.9149545735425663`*^9},
+ CellLabel->"In[24]:=",ExpressionUUID->"d40bfce6-0df6-4d37-a956-c39edf3b4636"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   StyleBox["\<\"Solving Problem \"\>",
+    StripOnInput->False,
+    LineColor->RGBColor[0.5, 0, 0.5],
+    FrontFaceColor->RGBColor[0.5, 0, 0.5],
+    BackFaceColor->RGBColor[0.5, 0, 0.5],
+    GraphicsColor->RGBColor[0.5, 0, 0.5],
+    FontFamily->"Times",
+    FontSize->16,
+    FontWeight->Bold,
+    FontSlant->Italic,
+    FontColor->RGBColor[0.5, 0, 0.5]], "\[InvisibleSpace]", 
+   StyleBox["\<\"3\"\>",
+    StripOnInput->False,
+    LineColor->RGBColor[1, 0, 1],
+    FrontFaceColor->RGBColor[1, 0, 1],
+    BackFaceColor->RGBColor[1, 0, 1],
+    GraphicsColor->RGBColor[1, 0, 1],
+    FontSize->16,
+    FontWeight->Bold,
+    FontColor->RGBColor[1, 0, 1]], "\[InvisibleSpace]", "\<\"\\n\"\>", 
+   "\[InvisibleSpace]", "\<\"z = \"\>", "\[InvisibleSpace]", 
+   TagBox[
+    FormBox[
+     RowBox[{
+      FractionBox[
+       RowBox[{"g", " ", 
+        SuperscriptBox["x", "2"], " ", 
+        RowBox[{
+         SuperscriptBox["sec", "2"], "(", "\[Theta]", ")"}]}], 
+       RowBox[{"2", " ", 
+        SubsuperscriptBox["v", "o", "2"]}]], "+", 
+      RowBox[{"x", " ", 
+       RowBox[{"tan", "(", "\[Theta]", ")"}]}]}],
+     TraditionalForm],
+    TraditionalForm,
+    Editable->True], "\[InvisibleSpace]", "\<\" = \"\>", "\[InvisibleSpace]", 
+   "69.17134939222628`"}],
+  SequenceForm[
+   Style["Solving Problem ", {FontFamily -> "Times", 16, 
+     RGBColor[0.5, 0, 0.5], Bold, Italic}], 
+   Style["3", {16, 
+     RGBColor[1, 0, 1], Bold}], "\n", "z = ", 
+   TraditionalForm[
+   Rational[1, 2] $CellContext`g $CellContext`x^2 
+     Sec[$CellContext`\[Theta]]^2 
+     Subscript[$CellContext`v, $CellContext`o]^(-2) + $CellContext`x 
+     Tan[$CellContext`\[Theta]]], " = ", 69.17134939222628],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.915040349756782*^9},
+ CellLabel->
+  "During evaluation of \
+In[24]:=",ExpressionUUID->"e03086f7-0589-4b21-8b87-ad7dafc66be8"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{"Problem", " ", "4"}], "*)"}]], "Input",
+ CellChangeTimes->{{3.9147067708194895`*^9, 3.914706784726323*^9}, 
+   3.914715390114128*^9, {3.914952290353492*^9, 3.914952295210794*^9}},
+ CellLabel->"In[27]:=",ExpressionUUID->"6aef075b-99cd-458b-a382-fc934670709c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"q12", "=", 
+   FractionBox[
+    RowBox[{"4", "\[Pi]", 
+     RowBox[{"(", "\[Sigma]", ")"}], 
+     SuperscriptBox["r1", "2"], 
+     RowBox[{"(", 
+      RowBox[{
+       SuperscriptBox["T1", "4"], "-", 
+       SuperscriptBox["T2", "4"]}], ")"}]}], 
+    RowBox[{
+     FractionBox["1", "\[Epsilon]1"], "+", 
+     RowBox[{
+      FractionBox[
+       RowBox[{"1", "-", "\[Epsilon]2"}], "\[Epsilon]2"], 
+      SuperscriptBox[
+       RowBox[{"(", 
+        FractionBox["r1", "r2"], ")"}], "2"]}]}]]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"qVal", "=", 
+   RowBox[{"q12", "/.", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"r1", "->", "0.01"}], ",", " ", 
+      RowBox[{"\[Epsilon]1", "->", "0.02"}], ",", 
+      RowBox[{"T1", "->", "350"}], ",", 
+      RowBox[{"r2", "->", "0.05"}], ",", 
+      RowBox[{"\[Epsilon]2", "->", "0.05"}], ",", 
+      RowBox[{"T2", "->", "75"}], ",", 
+      RowBox[{"\[Sigma]", "->", 
+       RowBox[{"5.67", "\[Times]", 
+        SuperscriptBox["10", 
+         RowBox[{"-", "8"}]]}]}]}], "}"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Print", "[", 
+  RowBox[{
+   RowBox[{"Style", "[", 
+    RowBox[{"\"\<Solving Problem \>\"", ",", 
+     RowBox[{"{", " ", 
+      RowBox[{
+       RowBox[{"FontFamily", "->", "\"\<Times\>\""}], ",", "16", ",", 
+       "Purple", ",", "Bold", ",", " ", "Italic"}], "}"}]}], "]"}], ",", 
+   RowBox[{"Style", "[", 
+    RowBox[{"\"\<4\>\"", ",", 
+     RowBox[{"{", 
+      RowBox[{"16", ",", "Magenta", ",", " ", "Bold"}], "}"}]}], "]"}], ",", 
+   "\"\<\\n\>\"", ",", "\"\<\!\(\*SubscriptBox[\(q\), \(12\)]\) = \>\"", ",", 
+   RowBox[{"TraditionalForm", "[", 
+    RowBox[{"q12", "/.", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"r1", "->", "\"\<\!\(\*SubscriptBox[\(r\), \(1\)]\)\>\""}], 
+       ",", 
+       RowBox[{"r2", "->", "\"\<\!\(\*SubscriptBox[\(r\), \(2\)]\)\>\""}], 
+       ",", " ", 
+       RowBox[{
+       "\[Epsilon]1", "->", 
+        "\"\<\!\(\*SubscriptBox[\(\[Epsilon]\), \(1\)]\)\>\""}], ",", " ", 
+       RowBox[{
+       "\[Epsilon]2", "->", 
+        "\"\<\!\(\*SubscriptBox[\(\[Epsilon]\), \(2\)]\)\>\""}], ",", 
+       RowBox[{"T1", "->", "\"\<\!\(\*SubscriptBox[\(T\), \(1\)]\)\>\""}], 
+       ",", " ", 
+       RowBox[{"T2", "->", "\"\<\!\(\*SubscriptBox[\(T\), \(2\)]\)\>\""}]}], 
+      "}"}]}], "]"}], " ", ",", "\"\< = \>\"", ",", " ", "qVal"}], 
+  "]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.914710077754589*^9, 3.914710565205408*^9}, {
+   3.9147147189931307`*^9, 3.914714774131427*^9}, {3.9147153931620965`*^9, 
+   3.914715395663717*^9}, 3.914715448401128*^9, 3.9147155418217297`*^9, {
+   3.9149517015059423`*^9, 3.914951771901698*^9}, {3.9149522396089864`*^9, 
+   3.9149522492022204`*^9}, {3.9149540992852592`*^9, 
+   3.9149542099894304`*^9}, {3.914954241224222*^9, 3.9149542431680484`*^9}, 
+   3.9149544970733223`*^9},
+ CellLabel->"In[28]:=",ExpressionUUID->"d919b5cc-6b3e-4867-a59a-e9b579036972"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   StyleBox["\<\"Solving Problem \"\>",
+    StripOnInput->False,
+    LineColor->RGBColor[0.5, 0, 0.5],
+    FrontFaceColor->RGBColor[0.5, 0, 0.5],
+    BackFaceColor->RGBColor[0.5, 0, 0.5],
+    GraphicsColor->RGBColor[0.5, 0, 0.5],
+    FontFamily->"Times",
+    FontSize->16,
+    FontWeight->Bold,
+    FontSlant->Italic,
+    FontColor->RGBColor[0.5, 0, 0.5]], "\[InvisibleSpace]", 
+   StyleBox["\<\"4\"\>",
+    StripOnInput->False,
+    LineColor->RGBColor[1, 0, 1],
+    FrontFaceColor->RGBColor[1, 0, 1],
+    BackFaceColor->RGBColor[1, 0, 1],
+    GraphicsColor->RGBColor[1, 0, 1],
+    FontSize->16,
+    FontWeight->Bold,
+    FontColor->RGBColor[1, 0, 1]], "\[InvisibleSpace]", "\<\"\\n\"\>", 
+   "\[InvisibleSpace]", "\<\"\\!\\(\\*SubscriptBox[\\(q\\), \\(12\\)]\\) = \"\
+\>", "\[InvisibleSpace]", 
+   TagBox[
+    FormBox[
+     FractionBox[
+      RowBox[{"4", " ", "\[Pi]", " ", "\[Sigma]", " ", 
+       SuperscriptBox["\<\"\\!\\(\\*SubscriptBox[\\(r\\), \\(1\\)]\\)\"\>", 
+        "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         SuperscriptBox["\<\"\\!\\(\\*SubscriptBox[\\(T\\), \\(1\\)]\\)\"\>", 
+          "4"], "-", 
+         SuperscriptBox["\<\"\\!\\(\\*SubscriptBox[\\(T\\), \\(2\\)]\\)\"\>", 
+          "4"]}], ")"}]}], 
+      RowBox[{
+       FractionBox[
+        RowBox[{
+         SuperscriptBox["\<\"\\!\\(\\*SubscriptBox[\\(r\\), \\(1\\)]\\)\"\>", 
+          "2"], " ", 
+         RowBox[{"(", 
+          RowBox[{
+          "1", "-", "\<\"\\!\\(\\*SubscriptBox[\\(\[Epsilon]\\), \
+\\(2\\)]\\)\"\>"}], ")"}]}], 
+        RowBox[{
+         SuperscriptBox["\<\"\\!\\(\\*SubscriptBox[\\(r\\), \\(2\\)]\\)\"\>", 
+          "2"], " ", "\<\"\\!\\(\\*SubscriptBox[\\(\[Epsilon]\\), \\(2\\)]\\)\
+\"\>"}]], "+", 
+       FractionBox[
+        "1", "\<\"\\!\\(\\*SubscriptBox[\\(\[Epsilon]\\), \\(1\\)]\\)\"\>"]}]],
+     TraditionalForm],
+    TraditionalForm,
+    Editable->True], "\[InvisibleSpace]", "\<\" = \"\>", "\[InvisibleSpace]", 
+   "0.02101971444383859`"}],
+  SequenceForm[
+   Style["Solving Problem ", {FontFamily -> "Times", 16, 
+     RGBColor[0.5, 0, 0.5], Bold, Italic}], 
+   Style["4", {16, 
+     RGBColor[1, 0, 1], Bold}], "\n", 
+   "\!\(\*SubscriptBox[\(q\), \(12\)]\) = ", 
+   TraditionalForm[
+   4 "\!\(\*SubscriptBox[\(r\), \(1\)]\)"^2 (
+     "\!\(\*SubscriptBox[\(T\), \(1\)]\)"^4 - 
+     "\!\(\*SubscriptBox[\(T\), \(2\)]\)"^4) (
+      "\!\(\*SubscriptBox[\(\[Epsilon]\), \(1\)]\)"^(-1) + 
+      "\!\(\*SubscriptBox[\(r\), \(1\)]\)"^2 
+       "\!\(\*SubscriptBox[\(r\), \(2\)]\)"^(-2) (1 - 
+        "\!\(\*SubscriptBox[\(\[Epsilon]\), \(2\)]\)")/
+       "\!\(\*SubscriptBox[\(\[Epsilon]\), \(2\)]\)")^(-1) 
+    Pi $CellContext`\[Sigma]], " = ", 0.02101971444383859],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9150403498375525`*^9},
+ CellLabel->
+  "During evaluation of \
+In[28]:=",ExpressionUUID->"8dc30812-4c6a-4fef-9a90-b074bb9c9ddd"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{"Problem", " ", "5"}], "*)"}]], "Input",
+ CellChangeTimes->{{3.914706912940436*^9, 3.914706915526863*^9}, 
+   3.914715401453218*^9, {3.9149522989331675`*^9, 3.9149523042090874`*^9}},
+ CellLabel->"In[31]:=",ExpressionUUID->"cf6db0a0-25f6-4e98-9df6-0f6cbd42fe20"],
+
+Cell[BoxData[
+ RowBox[{"Clear", "[", "x", "]"}]], "Input",
+ CellChangeTimes->{{3.914711290161574*^9, 3.9147112949383287`*^9}},
+ CellLabel->"In[32]:=",ExpressionUUID->"d72145f3-ca23-4f62-81e1-e182a6227764"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"\[Eta]", "=", 
+   RowBox[{
+    RowBox[{"Quantity", "[", 
+     RowBox[{"y", ",", "\"\<Meters\>\""}], "]"}], "*", 
+    SqrtBox[
+     FractionBox[
+      RowBox[{
+       RowBox[{"Quantity", "[", 
+        RowBox[{"\[Rho]", ",", 
+         RowBox[{"\"\<Kilogram\>\"", "/", 
+          SuperscriptBox["\"\<Meters\>\"", "3"]}]}], "]"}], "*", 
+       RowBox[{"Quantity", "[", 
+        RowBox[{"U", ",", 
+         RowBox[{"\"\<Meters\>\"", "/", "\"\<Seconds\>\""}]}], "]"}]}], 
+      RowBox[{
+       RowBox[{"Quantity", "[", 
+        RowBox[{"\[Mu]", ",", 
+         RowBox[{"\"\<Pascals\>\"", "*", "\"\<Seconds\>\""}]}], "]"}], "*", 
+       RowBox[{"Quantity", "[", 
+        RowBox[{"x", ",", "\"\<Meters\>\""}], "]"}]}]]]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Eta]Str", " ", "=", " ", 
+   RowBox[{"ToString", "[", 
+    RowBox[{"TraditionalForm", "[", "\[Eta]", "]"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"str", " ", "=", " ", 
+   RowBox[{"If", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Head", "[", "\[Eta]", "]"}], "===", " ", "Quantity"}], ",", 
+     " ", "\"\<, is a dimensionless quantity\>\""}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Print", "[", 
+  RowBox[{
+   RowBox[{"Style", "[", 
+    RowBox[{"\"\<Solving Problem \>\"", ",", 
+     RowBox[{"{", " ", 
+      RowBox[{
+       RowBox[{"FontFamily", "->", "\"\<Times\>\""}], ",", "16", ",", 
+       "Purple", ",", "Bold", ",", " ", "Italic"}], "}"}]}], "]"}], ",", 
+   RowBox[{"Style", "[", 
+    RowBox[{"\"\<5\>\"", ",", 
+     RowBox[{"{", 
+      RowBox[{"16", ",", "Magenta", ",", " ", "Bold"}], "}"}]}], "]"}], ",", 
+   "\"\<\\n\>\"", ",", "\"\<\[Eta] = \>\"", ",", "\[Eta]Str", ",", "str", 
+   ",", "\"\<\\n\>\"", ",", "\"\<Its head is Times, not Quantity\>\""}], 
+  "]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.9147110426465*^9, 3.9147110809578094`*^9}, {
+   3.914711145128527*^9, 3.9147113527731776`*^9}, 3.914711387985111*^9, {
+   3.9147114238216486`*^9, 3.914711465829268*^9}, {3.914711623069998*^9, 
+   3.9147116803664513`*^9}, {3.9147118947741113`*^9, 3.914711932327281*^9}, {
+   3.914711980767919*^9, 3.914711981381029*^9}, {3.914714516672409*^9, 
+   3.9147145982624636`*^9}, {3.9147154069972677`*^9, 3.9147154461358*^9}},
+ CellLabel->"In[33]:=",ExpressionUUID->"27aacdd8-6c8a-4ffe-8a76-82685131f4e5"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   StyleBox["\<\"Solving Problem \"\>",
+    StripOnInput->False,
+    LineColor->RGBColor[0.5, 0, 0.5],
+    FrontFaceColor->RGBColor[0.5, 0, 0.5],
+    BackFaceColor->RGBColor[0.5, 0, 0.5],
+    GraphicsColor->RGBColor[0.5, 0, 0.5],
+    FontFamily->"Times",
+    FontSize->16,
+    FontWeight->Bold,
+    FontSlant->Italic,
+    FontColor->RGBColor[0.5, 0, 0.5]], "\[InvisibleSpace]", 
+   StyleBox["\<\"5\"\>",
+    StripOnInput->False,
+    LineColor->RGBColor[1, 0, 1],
+    FrontFaceColor->RGBColor[1, 0, 1],
+    BackFaceColor->RGBColor[1, 0, 1],
+    GraphicsColor->RGBColor[1, 0, 1],
+    FontSize->16,
+    FontWeight->Bold,
+    FontColor->RGBColor[1, 0, 1]], "\[InvisibleSpace]", "\<\"\\n\"\>", 
+   "\[InvisibleSpace]", "\<\"\[Eta] = \"\>", 
+   "\[InvisibleSpace]", "\<\"\\!\\(\\*FormBox[TemplateBox[List[RowBox[List[\\\
+\"y\\\", \\\" \\\", SqrtBox[FractionBox[RowBox[List[\\\"\\\\[Rho]\\\", \\\" \
+\\\", \\\"U\\\"]], RowBox[List[\\\"\\\\[Mu]\\\", \\\" \\\", \\\"x\\\"]]]]]], \
+\\\"\\\", \\\"\\\", \\\"\\\\\\\"DimensionlessUnit\\\\\\\"\\\"], \
+\\\"QuantityTF\\\", Rule[SyntaxForm, Mod]], TraditionalForm]\\)\"\>", 
+   "\[InvisibleSpace]", "\<\", is a dimensionless quantity\"\>", 
+   "\[InvisibleSpace]", "\<\"\\n\"\>", 
+   "\[InvisibleSpace]", "\<\"Its head is Times, not Quantity\"\>"}],
+  SequenceForm[
+   Style["Solving Problem ", {FontFamily -> "Times", 16, 
+     RGBColor[0.5, 0, 0.5], Bold, Italic}], 
+   Style["5", {16, 
+     RGBColor[1, 0, 1], Bold}], "\n", "\[Eta] = ", 
+   "\!\(\*FormBox[TemplateBox[List[RowBox[List[\"y\", \" \", \
+SqrtBox[FractionBox[RowBox[List[\"\\[Rho]\", \" \", \"U\"]], \
+RowBox[List[\"\\[Mu]\", \" \", \"x\"]]]]]], \"\", \"\", \
+\"\\\"DimensionlessUnit\\\"\"], \"QuantityTF\", Rule[SyntaxForm, Mod]], \
+TraditionalForm]\)", ", is a dimensionless quantity", "\n", 
+   "Its head is Times, not Quantity"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.915040350215582*^9},
+ CellLabel->
+  "During evaluation of \
+In[33]:=",ExpressionUUID->"609603f4-dfcf-4a38-a979-e2f155bff666"]
+}, Open  ]],
+
+Cell["\<\
+Explanation for why QuantityUnit[] doesn\[CloseCurlyQuote]t work:
+Since QuantityUnit[] uses the Quantity[] function, QuantityUnit[] is still \
+able to associate symbolic values with units.  \
+\[OpenCurlyDoubleQuote]DimensionlessUnit\[CloseCurlyDoubleQuote] is a unit in \
+the Quantity[] function, so the type of the value is still \
+\[OpenCurlyDoubleQuote]Quantity.\[CloseCurlyDoubleQuote]\
+\>", "Text",
+ CellChangeTimes->{{3.9147117700905533`*^9, 3.9147118258555527`*^9}, {
+  3.914711913617969*^9, 3.9147120079633446`*^9}, {3.9149519264641504`*^9, 
+  3.9149519269219136`*^9}},ExpressionUUID->"150b5c8f-bae5-454c-9c59-\
+d964aac0e853"]
+},
+WindowSize->{638, 721},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+Magnification:>0.8 Inherited,
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"d2824c30-689e-4ad6-9586-0487b5900abc"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 219, 3, 22, "Input",ExpressionUUID->"cb2f2df2-a7fd-443e-ab74-26246b2f40b5"],
+Cell[CellGroupData[{
+Cell[802, 27, 2910, 74, 216, "Input",ExpressionUUID->"b2be36bb-511c-4071-9d9b-1ce0545b2a72"],
+Cell[3715, 103, 2211, 49, 56, "Print",ExpressionUUID->"5153e681-1e1c-4c86-9717-0bd706e286fe"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5963, 157, 2362, 57, 207, "Input",ExpressionUUID->"2e043183-45b1-42c7-b60a-4224adec36f0"],
+Cell[8328, 216, 2391, 51, 49, "Print",ExpressionUUID->"93bbc904-2773-4761-903e-e09e05898adc"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10756, 272, 432, 10, 22, "Input",ExpressionUUID->"527ac966-3b81-4c82-b1e1-59eed91cacd4"],
+Cell[11191, 284, 150, 2, 25, "Output",ExpressionUUID->"8eb56517-c769-466f-8053-c8be4603759c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11378, 291, 4154, 99, 177, "Input",ExpressionUUID->"3ce211a9-3eb2-4de6-a694-71646745de82"],
+Cell[15535, 392, 2877, 59, 92, "Print",ExpressionUUID->"9310857a-d5ba-464a-8cca-71de623e2699"]
+}, Open  ]],
+Cell[18427, 454, 303, 5, 22, "Input",ExpressionUUID->"aeb34766-ff36-480a-8879-0916c67020dc"],
+Cell[CellGroupData[{
+Cell[18755, 463, 1995, 53, 109, "Input",ExpressionUUID->"d40bfce6-0df6-4d37-a956-c39edf3b4636"],
+Cell[20753, 518, 1902, 54, 53, "Print",ExpressionUUID->"e03086f7-0589-4b21-8b87-ad7dafc66be8"]
+}, Open  ]],
+Cell[22670, 575, 299, 5, 22, "Input",ExpressionUUID->"6aef075b-99cd-458b-a382-fc934670709c"],
+Cell[CellGroupData[{
+Cell[22994, 584, 2954, 74, 147, "Input",ExpressionUUID->"d919b5cc-6b3e-4867-a59a-e9b579036972"],
+Cell[25951, 660, 2916, 76, 66, "Print",ExpressionUUID->"8dc30812-4c6a-4fef-9a90-b074bb9c9ddd"]
+}, Open  ]],
+Cell[28882, 739, 301, 5, 22, "Input",ExpressionUUID->"cf6db0a0-25f6-4e98-9df6-0f6cbd42fe20"],
+Cell[29186, 746, 205, 3, 22, "Input",ExpressionUUID->"d72145f3-ca23-4f62-81e1-e182a6227764"],
+Cell[CellGroupData[{
+Cell[29416, 753, 2380, 57, 164, "Input",ExpressionUUID->"27aacdd8-6c8a-4ffe-8a76-82685131f4e5"],
+Cell[31799, 812, 2054, 47, 72, "Print",ExpressionUUID->"609603f4-dfcf-4a38-a979-e2f155bff666"]
+}, Open  ]],
+Cell[33868, 862, 644, 11, 64, "Text",ExpressionUUID->"150b5c8f-bae5-454c-9c59-d964aac0e853"]
+}
+]
+*)
+

@@ -1,0 +1,1446 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     56658,       1438]
+NotebookOptionsPosition[     54912,       1404]
+NotebookOutlinePosition[     55343,       1421]
+CellTagsIndexPosition[     55300,       1418]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"ClearAll", "[", "\"\<Global*`\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.921055705043437*^9, 3.921055715814048*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"33d62084-73c1-4df4-a970-c2ddfe877891"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"Problem", " ", "1"}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"difference", " ", "=", " ", 
+     RowBox[{
+      RowBox[{"N", "[", 
+       RowBox[{
+        RowBox[{"Sin", "[", 
+         FractionBox["\[Pi]", "15"], "]"}], ",", "50"}], "]"}], "-", 
+      RowBox[{"N", "[", 
+       RowBox[{
+        RowBox[{
+         FractionBox["1", "4"], 
+         SqrtBox[
+          RowBox[{"7", "-", 
+           SqrtBox["5"], "-", 
+           SqrtBox[
+            RowBox[{"30", "-", 
+             RowBox[{"6", 
+              SqrtBox["5"]}]}]]}]]}], ",", "50"}], "]"}]}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"Print", "[", 
+    RowBox[{
+     RowBox[{"Style", "[", 
+      RowBox[{
+      "\"\<Solving Problem \>\"", ",", " ", "Purple", ",", " ", "Bold", ",", 
+       " ", "Italic", ",", " ", 
+       RowBox[{"FontFamily", "->", "\"\<Times New Roman\>\""}], ",", 
+       RowBox[{"FontSize", "->", "16"}]}], "]"}], ",", 
+     RowBox[{"Style", "[", 
+      RowBox[{"\"\<1\>\"", ",", " ", "Bold", ",", " ", "Purple", ",", " ", 
+       RowBox[{"FontSize", "->", "14"}]}], "]"}], ",", 
+     "\"\<\\nThe expression sin(\!\(\*FractionBox[\(\[Pi]\), \
+\(15\)]\))-\!\(\*FractionBox[\(1\), \(4\)]\)\!\(\*SqrtBox[\(7 - \*SqrtBox[\(5 \
+- \*SqrtBox[\(30 - 6 \*SqrtBox[\(5\)]\)]\)]\)]\) evaluates to \>\"", ",", " ",
+      "difference", ",", " ", "\"\<,\\nthus, \>\"", ",", "difference", ",", 
+     "\"\<< \!\(\*SuperscriptBox[\(10\), \(-50\)]\) returns \>\"", ",", 
+     RowBox[{"difference", "<", 
+      SuperscriptBox["10", 
+       RowBox[{"-", "50"}]]}]}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.92105571738375*^9, 3.9210557230306826`*^9}, {
+   3.921055776707826*^9, 3.9210558698003745`*^9}, {3.921055973750752*^9, 
+   3.921055982867898*^9}, {3.9210567349417763`*^9, 3.92105673748949*^9}, 
+   3.9210567809539843`*^9, {3.921142525638092*^9, 3.921142557856442*^9}, {
+   3.9211426050301323`*^9, 3.921142852651641*^9}, {3.921142886844439*^9, 
+   3.921142928783169*^9}},
+ CellLabel->"In[40]:=",ExpressionUUID->"a938f2de-c67d-4362-9b49-b1704cb4c25a"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   StyleBox["\<\"Solving Problem \"\>",
+    StripOnInput->False,
+    LineColor->RGBColor[0.5, 0, 0.5],
+    FrontFaceColor->RGBColor[0.5, 0, 0.5],
+    BackFaceColor->RGBColor[0.5, 0, 0.5],
+    GraphicsColor->RGBColor[0.5, 0, 0.5],
+    FontFamily->"Times New Roman",
+    FontSize->16,
+    FontWeight->Bold,
+    FontSlant->Italic,
+    FontColor->RGBColor[0.5, 0, 0.5]], "\[InvisibleSpace]", 
+   StyleBox["\<\"1\"\>",
+    StripOnInput->False,
+    LineColor->RGBColor[0.5, 0, 0.5],
+    FrontFaceColor->RGBColor[0.5, 0, 0.5],
+    BackFaceColor->RGBColor[0.5, 0, 0.5],
+    GraphicsColor->RGBColor[0.5, 0, 0.5],
+    FontSize->14,
+    FontWeight->Bold,
+    FontColor->RGBColor[0.5, 0, 0.5]], 
+   "\[InvisibleSpace]", "\<\"\\nThe expression sin(\\!\\(\\*FractionBox[\\(\
+\[Pi]\\), \\(15\\)]\\))-\\!\\(\\*FractionBox[\\(1\\), \
+\\(4\\)]\\)\\!\\(\\*SqrtBox[\\(7 - \\*SqrtBox[\\(5 - \\*SqrtBox[\\(30 - 6 \
+\\*SqrtBox[\\(5\\)]\\)]\\)]\\)]\\) evaluates to \"\>", "\[InvisibleSpace]", 
+   "0``50.381091094057496", "\[InvisibleSpace]", "\<\",\\nthus, \"\>", 
+   "\[InvisibleSpace]", "0``50.381091094057496", 
+   "\[InvisibleSpace]", "\<\"< \\!\\(\\*SuperscriptBox[\\(10\\), \
+\\(-50\\)]\\) returns \"\>", "\[InvisibleSpace]", "True"}],
+  SequenceForm[
+   Style["Solving Problem ", 
+    RGBColor[0.5, 0, 0.5], Bold, Italic, FontFamily -> "Times New Roman", 
+    FontSize -> 16], 
+   Style["1", Bold, 
+    RGBColor[0.5, 0, 0.5], FontSize -> 14], 
+   "\nThe expression sin(\!\(\*FractionBox[\(\[Pi]\), \
+\(15\)]\))-\!\(\*FractionBox[\(1\), \(4\)]\)\!\(\*SqrtBox[\(7 - \*SqrtBox[\(5 \
+- \*SqrtBox[\(30 - 6 \*SqrtBox[\(5\)]\)]\)]\)]\) evaluates to ", 
+   0``50.381091094057496, ",\nthus, ", 0``50.381091094057496, 
+   "< \!\(\*SuperscriptBox[\(10\), \(-50\)]\) returns ", True],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9217946493608932`*^9},
+ CellLabel->
+  "During evaluation of \
+In[40]:=",ExpressionUUID->"e65ade54-e540-41b5-9867-e8629663ac0d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{"Problem", " ", "2", "a"}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"numeric", "=", 
+     RowBox[{
+      RowBox[{"NIntegrate", "[", 
+       RowBox[{
+        FractionBox["1", 
+         SqrtBox[
+          RowBox[{"6", "-", 
+           SuperscriptBox["u", "2"]}]]], ",", 
+        RowBox[{"{", 
+         RowBox[{"u", ",", "2", ",", 
+          SqrtBox["6"]}], "}"}]}], "]"}], "==", 
+      RowBox[{"N", "[", 
+       RowBox[{"ArcCot", "[", 
+        SqrtBox["2"], "]"}], "]"}]}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"numericDif", "=", 
+     RowBox[{
+      RowBox[{"NIntegrate", "[", 
+       RowBox[{
+        FractionBox["1", 
+         SqrtBox[
+          RowBox[{"6", "-", 
+           SuperscriptBox["u", "2"]}]]], ",", 
+        RowBox[{"{", 
+         RowBox[{"u", ",", "2", ",", 
+          SqrtBox["6"]}], "}"}]}], "]"}], "-", 
+      RowBox[{"N", "[", 
+       RowBox[{"ArcCot", "[", 
+        SqrtBox["2"], "]"}], "]"}]}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"analytic", "=", 
+     RowBox[{
+      RowBox[{"N", "[", 
+       RowBox[{
+        RowBox[{
+         SubsuperscriptBox["\[Integral]", "2", 
+          SqrtBox["6"]], 
+         RowBox[{
+          FractionBox["1", 
+           SqrtBox[
+            RowBox[{"6", "-", 
+             SuperscriptBox["u", "2"]}]]], 
+          RowBox[{"\[DifferentialD]", "u"}]}]}], ",", "16"}], "]"}], "==", 
+      RowBox[{"N", "[", 
+       RowBox[{
+        RowBox[{"ArcCot", "[", 
+         SqrtBox["2"], "]"}], ",", "16"}], "]"}]}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"analyticDif", "=", 
+     RowBox[{"Round", "[", 
+      RowBox[{
+       RowBox[{"N", "[", 
+        RowBox[{
+         RowBox[{
+          SubsuperscriptBox["\[Integral]", "2", 
+           SqrtBox["6"]], 
+          RowBox[{
+           FractionBox["1", 
+            SqrtBox[
+             RowBox[{"6", "-", 
+              SuperscriptBox["u", "2"]}]]], 
+           RowBox[{"\[DifferentialD]", "u"}]}]}], ",", "17"}], "]"}], "-", 
+       RowBox[{"N", "[", 
+        RowBox[{
+         RowBox[{"ArcCot", "[", 
+          SqrtBox["2"], "]"}], ",", "17"}], "]"}]}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"Print", "[", 
+    RowBox[{
+     RowBox[{"Style", "[", 
+      RowBox[{
+      "\"\<Solving Problem \>\"", ",", "Purple", ",", "Italic", ",", "Bold", 
+       ",", 
+       RowBox[{"FontSize", "->", "16"}], ",", 
+       RowBox[{"FontFamily", "->", "\"\<Times\>\""}]}], "]"}], ",", 
+     RowBox[{"Style", "[", 
+      RowBox[{"\"\<2(a)\\n\>\"", ",", "Purple", ",", 
+       RowBox[{"FontSize", "->", "14"}], ",", "Bold"}], "]"}], ",", 
+     "\"\<For the given expression \!\(\*SubsuperscriptBox[\(\[Integral]\), \
+\(2\), SqrtBox[\(6\)]]\)\!\(\*FractionBox[\(1\), SqrtBox[\(6 - \
+\*SuperscriptBox[\(u\), \(2\)]\)]]\)\[DifferentialD]u = \!\(\*SuperscriptBox[\
+\(cot\), \(-1\)]\)(\!\(\*SqrtBox[\(2\)]\))\\nanalytical evaluation of the \
+integral makes the equality \>\"", ",", "analytic", ",", 
+     "\"\<\\nbecause of the difference:\\n\!\(\*SubsuperscriptBox[\(\
+\[Integral]\), \(2\), SqrtBox[\(6\)]]\)\!\(\*FractionBox[\(1\), SqrtBox[\(6 - \
+\*SuperscriptBox[\(u\), \(2\)]\)]]\)\[DifferentialD]u - \!\(\*SuperscriptBox[\
+\(cot\), \(-1\)]\)(\!\(\*SqrtBox[\(2\)]\)) = \>\"", ",", "analyticDif", ",", 
+     "\"\<\\nwhile numerical evaluation of the integral makes the equality \
+evaluate to \>\"", ",", "numeric", ",", 
+     "\"\<\\nbecause of the difference:\\n\!\(\*SubsuperscriptBox[\(\
+\[Integral]\), \(2\), SqrtBox[\(6\)]]\)\!\(\*FractionBox[\(1\), SqrtBox[\(6 - \
+\*SuperscriptBox[\(u\), \(2\)]\)]]\)\[DifferentialD]u - \!\(\*SuperscriptBox[\
+\(cot\), \(-1\)]\)(\!\(\*SqrtBox[\(2\)]\)) = \>\"", ",", "numericDif", ",", 
+     "\"\<\\nIn this case precisions of the RHS and LHS are:\\n\\t\>\"", ",", 
+     RowBox[{"Precision", "[", 
+      RowBox[{"NIntegrate", "[", 
+       RowBox[{
+        FractionBox["1", 
+         SqrtBox[
+          RowBox[{"6", "-", 
+           SuperscriptBox["u", "2"]}]]], ",", 
+        RowBox[{"{", 
+         RowBox[{"u", ",", "2", ",", 
+          SqrtBox["6"]}], "}"}]}], "]"}], "]"}], ",", "\"\< and \>\"", ",", 
+     RowBox[{"Precision", "[", 
+      RowBox[{"N", "[", 
+       RowBox[{"ArcCot", "[", 
+        SqrtBox["2"], "]"}], "]"}], "]"}], ",", " ", 
+     "\"\< respectively,\\n while the absolute uncertainties of the RHS and \
+LHS are: \\n\\t\>\"", ",", 
+     RowBox[{
+      RowBox[{"Abs", "[", 
+       RowBox[{"NIntegrate", "[", 
+        RowBox[{
+         FractionBox["1", 
+          SqrtBox[
+           RowBox[{"6", "-", 
+            SuperscriptBox["u", "2"]}]]], ",", 
+         RowBox[{"{", 
+          RowBox[{"u", ",", "2", ",", 
+           SqrtBox["6"]}], "}"}]}], "]"}], "]"}], "*", 
+      RowBox[{"10", "^", 
+       RowBox[{"(", 
+        RowBox[{"-", 
+         RowBox[{"Precision", "[", 
+          RowBox[{"NIntegrate", "[", 
+           RowBox[{
+            FractionBox["1", 
+             SqrtBox[
+              RowBox[{"6", "-", 
+               SuperscriptBox["u", "2"]}]]], ",", 
+            RowBox[{"{", 
+             RowBox[{"u", ",", "2", ",", 
+              SqrtBox["6"]}], "}"}]}], "]"}], "]"}]}], ")"}]}]}], ",", 
+     "\"\< and \>\"", ",", " ", 
+     RowBox[{
+      RowBox[{"Abs", "[", 
+       RowBox[{"N", "[", 
+        RowBox[{"ArcCot", "[", 
+         SqrtBox["2"], "]"}], "]"}], "]"}], "*", 
+      RowBox[{"10", "^", 
+       RowBox[{"(", 
+        RowBox[{"-", 
+         RowBox[{"Precision", "[", 
+          RowBox[{"N", "[", 
+           RowBox[{"ArcCot", "[", 
+            SqrtBox["2"], "]"}], "]"}], "]"}]}], ")"}]}]}]}], 
+    "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.921056807688834*^9, 3.92105681433032*^9}, {
+   3.921056914369158*^9, 3.921056997842519*^9}, {3.9210570332511015`*^9, 
+   3.92105709154797*^9}, {3.921057172323241*^9, 3.9210572470127635`*^9}, {
+   3.921057424189468*^9, 3.9210575084742937`*^9}, {3.921058127867032*^9, 
+   3.9210582369168434`*^9}, {3.9210584173096657`*^9, 
+   3.9210584779441547`*^9}, {3.9210585357995715`*^9, 3.921058544154354*^9}, {
+   3.921058754946908*^9, 3.92105875698579*^9}, {3.92105880593536*^9, 
+   3.921058826062702*^9}, {3.921193024395938*^9, 3.9211930245949535`*^9}, {
+   3.9211930818300467`*^9, 3.9211931223469267`*^9}, {3.9211932440504937`*^9, 
+   3.9211932536188726`*^9}, {3.921193284853932*^9, 3.9211932935123873`*^9}, {
+   3.9211933666360703`*^9, 3.9211933773364615`*^9}, {3.921231000448493*^9, 
+   3.921231076325061*^9}, {3.921231319129345*^9, 3.9212313721515474`*^9}, {
+   3.921231434304477*^9, 3.921231436501156*^9}, {3.9212317931870604`*^9, 
+   3.921231799933266*^9}, 3.9212895676530604`*^9, {3.921289617816451*^9, 
+   3.921290058448967*^9}, {3.9212901062404876`*^9, 3.921290162206792*^9}, {
+   3.921290198943325*^9, 3.9212902032065387`*^9}, {3.9212902334812174`*^9, 
+   3.9212902480454073`*^9}, 3.92129030760131*^9, {3.921290567976405*^9, 
+   3.921290609012805*^9}, {3.9212906616495686`*^9, 3.921290662674121*^9}, {
+   3.9213158168507557`*^9, 3.9213158189486747`*^9}, {3.92131593459466*^9, 
+   3.9213159534419665`*^9}, {3.921316904840546*^9, 3.9213169254890246`*^9}, 
+   3.9215389003710284`*^9, 3.921540010179701*^9, 3.9215402215533543`*^9, {
+   3.921612133219844*^9, 3.9216121344451447`*^9}},
+ CellLabel->"In[35]:=",ExpressionUUID->"81f23495-a601-42a7-9d31-a14715e96adf"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   StyleBox["\<\"Solving Problem \"\>",
+    StripOnInput->False,
+    LineColor->RGBColor[0.5, 0, 0.5],
+    FrontFaceColor->RGBColor[0.5, 0, 0.5],
+    BackFaceColor->RGBColor[0.5, 0, 0.5],
+    GraphicsColor->RGBColor[0.5, 0, 0.5],
+    FontFamily->"Times",
+    FontSize->16,
+    FontWeight->Bold,
+    FontSlant->Italic,
+    FontColor->RGBColor[0.5, 0, 0.5]], "\[InvisibleSpace]", 
+   StyleBox["\<\"2(a)\\n\"\>",
+    StripOnInput->False,
+    LineColor->RGBColor[0.5, 0, 0.5],
+    FrontFaceColor->RGBColor[0.5, 0, 0.5],
+    BackFaceColor->RGBColor[0.5, 0, 0.5],
+    GraphicsColor->RGBColor[0.5, 0, 0.5],
+    FontSize->14,
+    FontWeight->Bold,
+    FontColor->RGBColor[0.5, 0, 0.5]], 
+   "\[InvisibleSpace]", "\<\"For the given expression \
+\\!\\(\\*SubsuperscriptBox[\\(\[Integral]\\), \\(2\\), \
+SqrtBox[\\(6\\)]]\\)\\!\\(\\*FractionBox[\\(1\\), SqrtBox[\\(6 - \
+\\*SuperscriptBox[\\(u\\), \\(2\\)]\\)]]\\)\[DifferentialD]u = \
+\\!\\(\\*SuperscriptBox[\\(cot\\), \\(-1\\)]\\)(\\!\\(\\*SqrtBox[\\(2\\)]\\))\
+\\nanalytical evaluation of the integral makes the equality \"\>", 
+   "\[InvisibleSpace]", "True", 
+   "\[InvisibleSpace]", "\<\"\\nbecause of the \
+difference:\\n\\!\\(\\*SubsuperscriptBox[\\(\[Integral]\\), \\(2\\), SqrtBox[\
+\\(6\\)]]\\)\\!\\(\\*FractionBox[\\(1\\), SqrtBox[\\(6 - \
+\\*SuperscriptBox[\\(u\\), \\(2\\)]\\)]]\\)\[DifferentialD]u - \
+\\!\\(\\*SuperscriptBox[\\(cot\\), \\(-1\\)]\\)(\\!\\(\\*SqrtBox[\\(2\\)]\\)) \
+= \"\>", "\[InvisibleSpace]", "0", 
+   "\[InvisibleSpace]", "\<\"\\nwhile numerical evaluation of the integral \
+makes the equality evaluate to \"\>", "\[InvisibleSpace]", "False", 
+   "\[InvisibleSpace]", "\<\"\\nbecause of the \
+difference:\\n\\!\\(\\*SubsuperscriptBox[\\(\[Integral]\\), \\(2\\), SqrtBox[\
+\\(6\\)]]\\)\\!\\(\\*FractionBox[\\(1\\), SqrtBox[\\(6 - \
+\\*SuperscriptBox[\\(u\\), \\(2\\)]\\)]]\\)\[DifferentialD]u - \
+\\!\\(\\*SuperscriptBox[\\(cot\\), \\(-1\\)]\\)(\\!\\(\\*SqrtBox[\\(2\\)]\\)) \
+= \"\>", "\[InvisibleSpace]", 
+   RowBox[{"-", "1.412780181730966`*^-8"}], 
+   "\[InvisibleSpace]", "\<\"\\nIn this case precisions of the RHS and LHS \
+are:\\n\\t\"\>", "\[InvisibleSpace]", "MachinePrecision", 
+   "\[InvisibleSpace]", "\<\" and \"\>", "\[InvisibleSpace]", 
+   "MachinePrecision", 
+   "\[InvisibleSpace]", "\<\" respectively,\\n while the absolute \
+uncertainties of the RHS and LHS are: \\n\\t\"\>", "\[InvisibleSpace]", 
+   "6.833197280704374`*^-17", "\[InvisibleSpace]", "\<\" and \"\>", 
+   "\[InvisibleSpace]", "6.833197437554483`*^-17"}],
+  SequenceForm[
+   Style["Solving Problem ", 
+    RGBColor[0.5, 0, 0.5], Italic, Bold, FontSize -> 16, FontFamily -> 
+    "Times"], 
+   Style["2(a)\n", 
+    RGBColor[0.5, 0, 0.5], FontSize -> 14, Bold], 
+   "For the given expression \!\(\*SubsuperscriptBox[\(\[Integral]\), \(2\), \
+SqrtBox[\(6\)]]\)\!\(\*FractionBox[\(1\), SqrtBox[\(6 - \
+\*SuperscriptBox[\(u\), \(2\)]\)]]\)\[DifferentialD]u = \!\(\*SuperscriptBox[\
+\(cot\), \(-1\)]\)(\!\(\*SqrtBox[\(2\)]\))\nanalytical evaluation of the \
+integral makes the equality ", True, 
+   "\nbecause of the difference:\n\!\(\*SubsuperscriptBox[\(\[Integral]\), \
+\(2\), SqrtBox[\(6\)]]\)\!\(\*FractionBox[\(1\), SqrtBox[\(6 - \
+\*SuperscriptBox[\(u\), \(2\)]\)]]\)\[DifferentialD]u - \!\(\*SuperscriptBox[\
+\(cot\), \(-1\)]\)(\!\(\*SqrtBox[\(2\)]\)) = ", 0, 
+   "\nwhile numerical evaluation of the integral makes the equality evaluate \
+to ", False, 
+   "\nbecause of the difference:\n\!\(\*SubsuperscriptBox[\(\[Integral]\), \
+\(2\), SqrtBox[\(6\)]]\)\!\(\*FractionBox[\(1\), SqrtBox[\(6 - \
+\*SuperscriptBox[\(u\), \(2\)]\)]]\)\[DifferentialD]u - \!\(\*SuperscriptBox[\
+\(cot\), \(-1\)]\)(\!\(\*SqrtBox[\(2\)]\)) = ", -1.412780181730966*^-8, 
+   "\nIn this case precisions of the RHS and LHS are:\n\t", MachinePrecision, 
+   " and ", MachinePrecision, 
+   " respectively,\n while the absolute uncertainties of the RHS and LHS are: \
+\n\t", 6.833197280704374*^-17, " and ", 6.833197437554483*^-17],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9217941412040825`*^9},
+ CellLabel->
+  "During evaluation of \
+In[35]:=",ExpressionUUID->"8b1e07d4-3bab-4484-b353-b449dfa6b9a0"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"Problem", " ", "2", 
+    RowBox[{"(", "b", ")"}]}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"numeric", "=", 
+     RowBox[{
+      RowBox[{"NIntegrate", "[", 
+       RowBox[{
+        FractionBox["1", 
+         SqrtBox[
+          RowBox[{"6", "-", 
+           SuperscriptBox["u", "2"]}]]], ",", 
+        RowBox[{"{", 
+         RowBox[{"u", ",", "2", ",", 
+          SqrtBox["6"]}], "}"}], ",", 
+        RowBox[{"WorkingPrecision", "->", "16"}]}], "]"}], "==", 
+      RowBox[{"N", "[", 
+       RowBox[{
+        RowBox[{"ArcCot", "[", 
+         SqrtBox["2"], "]"}], ",", "16"}], "]"}]}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"numericDif", "=", 
+     RowBox[{
+      RowBox[{"NIntegrate", "[", 
+       RowBox[{
+        FractionBox["1", 
+         SqrtBox[
+          RowBox[{"6", "-", 
+           SuperscriptBox["u", "2"]}]]], ",", 
+        RowBox[{"{", 
+         RowBox[{"u", ",", "2", ",", 
+          SqrtBox["6"]}], "}"}], ",", 
+        RowBox[{"WorkingPrecision", "->", "16"}]}], "]"}], "-", 
+      RowBox[{"N", "[", 
+       RowBox[{
+        RowBox[{"ArcCot", "[", 
+         SqrtBox["2"], "]"}], ",", "16"}], "]"}]}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"Print", "[", 
+    RowBox[{
+     RowBox[{"Style", "[", 
+      RowBox[{
+      "\"\<Solving Problem \>\"", ",", "Purple", ",", "Bold", ",", "Italic", 
+       ",", 
+       RowBox[{"FontSize", "->", "16"}], ",", 
+       RowBox[{"FontFamily", "->", "\"\<Times\>\""}]}], "]"}], ",", 
+     RowBox[{"Style", "[", 
+      RowBox[{"\"\<2(b)\\n\>\"", ",", "Purple", ",", 
+       RowBox[{"FontSize", "->", "14"}], ",", "Bold"}], "]"}], ",", 
+     "\"\<The expression \!\(\*SubsuperscriptBox[\(\[Integral]\), \(2\), \
+SqrtBox[\(6\)]]\)\!\(\*FractionBox[\(1\), SqrtBox[\(6 - \
+\*SuperscriptBox[\(u\), \(2\)]\)]]\)\[DifferentialD]u = \!\(\*SuperscriptBox[\
+\(cot\), \(-1\)]\)(\!\(\*SqrtBox[\(2\)]\))evaluates to \>\"", ",", "numeric", 
+     ",", "\"\<\\nbecause of the difference:\\n\!\(\*SubsuperscriptBox[\(\
+\[Integral]\), \(2\), SqrtBox[\(6\)]]\)\!\(\*FractionBox[\(1\), SqrtBox[\(6 - \
+\*SuperscriptBox[\(u\), \(2\)]\)]]\)\[DifferentialD]u - \!\(\*SuperscriptBox[\
+\(cot\), \(-1\)]\)(\!\(\*SqrtBox[\(2\)]\)) = \>\"", ",", "numericDif", ",", 
+     "\"\<\\nPrecisions of the LHS and RHS are:\\n\\t\>\"", ",", 
+     RowBox[{"Precision", "[", 
+      RowBox[{"NIntegrate", "[", 
+       RowBox[{
+        FractionBox["1", 
+         SqrtBox[
+          RowBox[{"6", "-", 
+           SuperscriptBox["u", "2"]}]]], ",", 
+        RowBox[{"{", 
+         RowBox[{"u", ",", "2", ",", 
+          SqrtBox["6"]}], "}"}], ",", 
+        RowBox[{"WorkingPrecision", "->", "16"}]}], "]"}], "]"}], ",", 
+     "\"\< and \>\"", ",", 
+     RowBox[{"Precision", "[", 
+      RowBox[{"N", "[", 
+       RowBox[{
+        RowBox[{"ArcCot", "[", 
+         SqrtBox["2"], "]"}], ",", "16"}], "]"}], "]"}], ",", 
+     "\"\< respectively,\\nwhile the absolute uncertainties of the RHS and \
+LHS are:\\n\\t\>\"", ",", 
+     SuperscriptBox["10", 
+      RowBox[{"-", 
+       RowBox[{"Accuracy", "[", 
+        RowBox[{"NIntegrate", "[", 
+         RowBox[{
+          FractionBox["1", 
+           SqrtBox[
+            RowBox[{"6", "-", 
+             SuperscriptBox["u", "2"]}]]], ",", 
+          RowBox[{"{", 
+           RowBox[{"u", ",", "2", ",", 
+            SqrtBox["6"]}], "}"}], ",", 
+          RowBox[{"WorkingPrecision", "->", "16"}]}], "]"}], "]"}]}]], ",", 
+     "\"\< and \>\"", ",", 
+     SuperscriptBox["10", 
+      RowBox[{"-", 
+       RowBox[{"Accuracy", "[", 
+        RowBox[{"N", "[", 
+         RowBox[{
+          RowBox[{"ArcCot", "[", 
+           SqrtBox["2"], "]"}], ",", "16"}], "]"}], "]"}]}]]}], 
+    "]"}]}]}]], "Input",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGAQBmIQPcs25l+A+VtHru/x/0E0wzK/efuA9B3tTYtAdJd4
+8ioQvSyecTWIdq1ROQqiaxbFnQDRXLrrL4PoSQoqN0G0Y0btXRC94UEfmG55
+FfsURNd5uz8Dm/es5xWIZi+Z8xpE75v85jOIPnM79QuIbnI1Lr4NpAWSN4Fp
+yzWdDSD6x/3DYFpoza4WEM2X/hJMS3yw6QbRbRPC+0C0SK//ShDd8TBxNYhe
+pufx/AGQroj2AdNM3affgOh5X3negmjf6F+iD4F01Nt+MxA9SSUiDETrVxaB
+6eT5x1eB6JD/7KtBNAArt6Qs
+  "],
+ CellLabel->
+  "In[256]:=",ExpressionUUID->"44ab8cad-6fc9-414d-bba1-575798b653a1"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"NIntegrate", "[", 
+       RowBox[{
+        FractionBox["1", 
+         SqrtBox[
+          RowBox[{"6", "-", 
+           SuperscriptBox["u", "2"]}]]], ",", 
+        RowBox[{"{", 
+         RowBox[{"u", ",", "2", ",", 
+          SqrtBox["6"]}], "}"}]}], 
+       RowBox[{"(*", 
+        RowBox[{",", 
+         RowBox[{"WorkingPrecision", "->", "17"}]}], "*)"}], "]"}], "-", 
+      RowBox[{
+       RowBox[{"N", "[", 
+        RowBox[{"ArcCot", "[", 
+         SqrtBox["2"], "]"}], "]"}], "\n", "numericDif"}]}], "=", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"NIntegrate", "[", 
+        RowBox[{
+         FractionBox["1", 
+          SqrtBox[
+           RowBox[{"6", "-", 
+            SuperscriptBox["u", "2"]}]]], ",", 
+         RowBox[{"{", 
+          RowBox[{"u", ",", "2", ",", 
+           SqrtBox["6"]}], "}"}], ",", 
+         RowBox[{"WorkingPrecision", "->", "16"}]}], "]"}], "-", 
+       RowBox[{
+        RowBox[{"N", "[", 
+         RowBox[{
+          RowBox[{"ArcCot", "[", 
+           SqrtBox["2"], "]"}], ",", "16"}], "]"}], "\n", "absUncertainR"}]}],
+       "=", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Abs", "[", 
+         RowBox[{"NIntegrate", "[", 
+          RowBox[{
+           FractionBox["1", 
+            SqrtBox[
+             RowBox[{"6", "-", 
+              SuperscriptBox["u", "2"]}]]], ",", 
+           RowBox[{"{", 
+            RowBox[{"u", ",", "2", ",", 
+             SqrtBox["6"]}], "}"}], ",", 
+           RowBox[{"WorkingPrecision", "->", "16"}]}], "]"}], "]"}], "*", 
+        SuperscriptBox["10", 
+         RowBox[{"-", "16"}]], "\[IndentingNewLine]", "absUncertainL"}], "=", 
+       RowBox[{
+        RowBox[{"Abs", "[", 
+         RowBox[{"N", "[", 
+          RowBox[{
+           RowBox[{"ArcCot", "[", 
+            SqrtBox["2"], "]"}], ",", "16"}], "]"}], "]"}], "*", 
+        SuperscriptBox["10", 
+         RowBox[{"-", "16.1505"}]], "\n", 
+        RowBox[{"expr", "=", 
+         RowBox[{"NIntegrate", "[", 
+          RowBox[{
+           FractionBox["1", 
+            SqrtBox[
+             RowBox[{"6", "-", 
+              SuperscriptBox["u", "2"]}]]], ",", 
+           RowBox[{"{", 
+            RowBox[{"u", ",", "2", ",", 
+             SqrtBox["6"]}], "}"}], ",", 
+           RowBox[{"WorkingPrecision", "->", "16"}], ",", 
+           RowBox[{"PrecisionGoal", "->", "16"}]}], "]"}]}]}]}]}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Precision", "[", "expr", "]"}], "\n", 
+     SuperscriptBox["10", 
+      RowBox[{"-", 
+       RowBox[{"Accuracy", "[", "expr", "]"}]}]]}]}], "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"N", "[", 
+      RowBox[{
+       SqrtBox["2"], "-", 
+       SqrtBox["3"]}], "]"}], "\[IndentingNewLine]", 
+     RowBox[{"N", "[", 
+      RowBox[{"Integrate", "[", 
+       RowBox[{
+        FractionBox["1", 
+         SqrtBox[
+          RowBox[{"6", "-", 
+           SuperscriptBox["u", "2"]}]]], ",", 
+        RowBox[{"{", 
+         RowBox[{"u", ",", "2", ",", 
+          SqrtBox["6"]}], "}"}]}], "]"}], "]"}], "\[IndentingNewLine]", 
+     RowBox[{"ArcCot", "[", 
+      SqrtBox["2"], "]"}]}], "//", 
+    RowBox[{"N", "\[IndentingNewLine]", 
+     RowBox[{"Precision", "[", 
+      RowBox[{"NIntegrate", "[", 
+       RowBox[{
+        FractionBox["1", 
+         SqrtBox[
+          RowBox[{"6", "-", 
+           SuperscriptBox["u", "2"]}]]], ",", 
+        RowBox[{"{", 
+         RowBox[{"u", ",", "2", ",", 
+          SqrtBox["6"]}], "}"}]}], "]"}], "]"}], "\[IndentingNewLine]", 
+     RowBox[{"Precision", "[", 
+      RowBox[{"N", "[", 
+       RowBox[{"ArcCot", "[", 
+        SqrtBox["2"], "]"}], "]"}], "]"}], "\[IndentingNewLine]", 
+     RowBox[{"Abs", "[", 
+      RowBox[{"NIntegrate", "[", 
+       RowBox[{
+        FractionBox["1", 
+         SqrtBox[
+          RowBox[{"6", "-", 
+           SuperscriptBox["u", "2"]}]]], ",", 
+        RowBox[{"{", 
+         RowBox[{"u", ",", "2", ",", 
+          SqrtBox["6"]}], "}"}]}], "]"}], "]"}], "*", 
+     RowBox[{"10", "^", 
+      RowBox[{"(", 
+       RowBox[{"-", 
+        RowBox[{"Precision", "[", 
+         RowBox[{"NIntegrate", "[", 
+          RowBox[{
+           FractionBox["1", 
+            SqrtBox[
+             RowBox[{"6", "-", 
+              SuperscriptBox["u", "2"]}]]], ",", 
+           RowBox[{"{", 
+            RowBox[{"u", ",", "2", ",", 
+             SqrtBox["6"]}], "}"}]}], "]"}], "]"}]}], ")"}]}], 
+     "\[IndentingNewLine]", 
+     RowBox[{"Abs", "[", 
+      RowBox[{"N", "[", 
+       RowBox[{"ArcCot", "[", 
+        SqrtBox["2"], "]"}], "]"}], "]"}], "*", 
+     RowBox[{"10", "^", 
+      RowBox[{"(", 
+       RowBox[{"-", 
+        RowBox[{"Precision", "[", 
+         RowBox[{"N", "[", 
+          RowBox[{"ArcCot", "[", 
+           SqrtBox["2"], "]"}], "]"}], "]"}]}], ")"}]}]}]}], "*)"}], 
+  "\n"}]], "Input",
+ CellChangeTimes->{{3.9215996211062307`*^9, 3.92159962247508*^9}, {
+  3.921611347081134*^9, 
+  3.921611358586384*^9}},ExpressionUUID->"9fb7594c-dd62-4805-8aca-\
+6711c05c55a4"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"Problem", " ", "3"}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{"default", " ", "precision"}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"integral", "=", 
+     RowBox[{"NIntegrate", "[", 
+      RowBox[{
+       FractionBox[
+        RowBox[{"3.742", "*", 
+         SuperscriptBox["10", "8"]}], 
+        RowBox[{
+         SuperscriptBox["\[Lambda]", "5"], 
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox["\[ExponentialE]", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"1.4388", "*", 
+               SuperscriptBox["10", "4"]}], ")"}], "/", 
+             RowBox[{"(", 
+              RowBox[{"\[Lambda]", "*", "500"}], ")"}]}]], "-", "1"}], 
+          ")"}]}]], ",", 
+       RowBox[{"{", 
+        RowBox[{"\[Lambda]", ",", "0", ",", "Infinity"}], "}"}]}], "]"}]}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"exact", "=", 
+     RowBox[{"5.67", "*", 
+      SuperscriptBox["10", 
+       RowBox[{"-", "8"}]], "*", 
+      SuperscriptBox["500", "4"]}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"defaultPrec", "=", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"integral", "-", "exact"}], ")"}], "/", "exact"}], "*", 
+      "100"}]}], ";"}], "\n", 
+   RowBox[{"(*", " ", 
+    RowBox[{"high", " ", "precision"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"delta", "=", 
+     RowBox[{"3.54375", "*", 
+      SuperscriptBox["10", 
+       RowBox[{"-", "27"}]]}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"acc", "=", 
+     RowBox[{"-", 
+      RowBox[{"Log10", "[", "delta", "]"}]}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"integralPrec", "=", 
+     RowBox[{"NIntegrate", "[", 
+      RowBox[{
+       FractionBox[
+        RowBox[{
+         FractionBox["3742", "1000"], "*", 
+         SuperscriptBox["10", "8"]}], 
+        RowBox[{
+         SuperscriptBox["\[Lambda]", "5"], 
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox["\[ExponentialE]", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{
+               FractionBox["14388", "10000"], "*", 
+               SuperscriptBox["10", "4"]}], ")"}], "/", 
+             RowBox[{"(", 
+              RowBox[{"\[Lambda]", "*", "500"}], ")"}]}]], "-", "1"}], 
+          ")"}]}]], ",", 
+       RowBox[{"{", 
+        RowBox[{"\[Lambda]", ",", "0", ",", "Infinity"}], "}"}], ",", 
+       RowBox[{"WorkingPrecision", "->", "acc"}], ",", 
+       RowBox[{"AccuracyGoal", "->", "acc"}]}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"exactPrec", "=", 
+     RowBox[{"N", "[", 
+      RowBox[{
+       RowBox[{
+        FractionBox["5670", "1000"], "*", 
+        SuperscriptBox["10", 
+         RowBox[{"-", "8"}]], "*", 
+        SuperscriptBox["500", "4"]}], ",", 
+       RowBox[{"{", 
+        RowBox[{"Infinity", ",", "acc"}], "}"}]}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"errPrec", "=", 
+     RowBox[{
+      FractionBox[
+       RowBox[{"integralPrec", "-", "exactPrec"}], "exactPrec"], "*", 
+      "100"}]}], ";"}], "\n", 
+   RowBox[{"(*", 
+    RowBox[{"Difference", " ", "in", " ", "errors"}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"decrErr", "=", 
+     RowBox[{"defaultPrec", "-", "errPrec"}]}], ";"}], "\n", 
+   RowBox[{"Print", "[", 
+    RowBox[{
+     RowBox[{"Style", "[", 
+      RowBox[{
+      "\"\<Solving Problem \>\"", ",", "Purple", ",", "Bold", ",", "Italic", 
+       ",", 
+       RowBox[{"FontSize", "->", "16"}], ",", 
+       RowBox[{"FontFamily", "->", "\"\<Times\>\""}]}], "]"}], ",", 
+     RowBox[{"Style", "[", 
+      RowBox[{"\"\<3\\n\>\"", ",", "Purple", ",", 
+       RowBox[{"FontSize", "->", "14"}], ",", "Bold"}], "]"}], ",", 
+     "\"\<The relative error for the case of default-precision computation \
+is: \>\"", ",", 
+     RowBox[{"FullForm", "[", "defaultPrec", "]"}], ",", 
+     "\"\<%\\nThe relative error for the case of high-precision computation \
+is: \>\"", ",", 
+     RowBox[{"N", "[", 
+      RowBox[{"errPrec", ",", "10"}], "]"}], ",", 
+     "\"\<%\\nHigh precision computation reduces the error by \>\"", ",", 
+     "decrErr", ",", 
+     "\"\<\\nPrecisions of exact and approximate soluations, obtained with \
+default settings,\\n\\tare \>\"", ",", " ", 
+     RowBox[{"Precision", "[", "integral", "]"}], ",", " ", "\"\< and \>\"", 
+     ",", 
+     RowBox[{"Precision", "[", "exact", "]"}], ",", 
+     "\"\< respectively\\nPrecisions of exact and approximate soluations, \
+obtained with high-precision computations,\\n\\tare \>\"", ",", 
+     RowBox[{"Precision", "[", "integralPrec", "]"}], ",", " ", 
+     "\"\< and \>\"", ",", 
+     RowBox[{"Precision", "[", "exactPrec", "]"}], ",", " ", 
+     "\"\< respectively\>\""}], "]"}], "\[IndentingNewLine]"}]}]], "Input",
+ CellChangeTimes->{{3.9211429832115707`*^9, 3.9211429989860263`*^9}, {
+   3.9211433089910135`*^9, 3.9211434825884857`*^9}, {3.921143514276394*^9, 
+   3.9211435539683557`*^9}, {3.9211435970470505`*^9, 3.92114360665075*^9}, {
+   3.9211436604483423`*^9, 3.9211436632266846`*^9}, {3.9211440081213655`*^9, 
+   3.921144043967953*^9}, {3.9211442072049437`*^9, 3.921144209315591*^9}, {
+   3.921144420343445*^9, 3.9211444723534203`*^9}, {3.9211445133931284`*^9, 
+   3.92114454260341*^9}, {3.921144683334983*^9, 3.921144685894971*^9}, {
+   3.9211447237739697`*^9, 3.9211448938253045`*^9}, 3.921539232642704*^9, {
+   3.921539282129512*^9, 3.921539287697465*^9}, {3.9215395658310175`*^9, 
+   3.9215395721984825`*^9}, {3.9215435310407066`*^9, 
+   3.9215435537571373`*^9}, {3.921544372042819*^9, 3.9215446847633038`*^9}, 
+   3.921546453390934*^9, {3.9215467114455166`*^9, 3.92154671772001*^9}, 
+   3.921546820851157*^9, {3.921603689332002*^9, 3.921603703133458*^9}, {
+   3.921603747937816*^9, 3.92160380665162*^9}, {3.9216038437129602`*^9, 
+   3.9216038510984364`*^9}, {3.9216038888109636`*^9, 
+   3.9216039948001146`*^9}, {3.9216040747942715`*^9, 
+   3.9216041350864725`*^9}, {3.92160417755105*^9, 3.921604221015311*^9}, {
+   3.921604257382142*^9, 3.92160426155326*^9}, {3.9216044968483458`*^9, 
+   3.9216046120201087`*^9}, {3.9216056218581257`*^9, 
+   3.9216057275764265`*^9}, {3.9216058059621625`*^9, 
+   3.9216058560429287`*^9}, {3.9216060082102213`*^9, 3.921606025566847*^9}, {
+   3.921606259497373*^9, 3.921606261015194*^9}, {3.921610218204915*^9, 
+   3.921610222455143*^9}, {3.9216103584046745`*^9, 3.921610387171524*^9}, {
+   3.9216104226920166`*^9, 3.9216104235143414`*^9}, 3.921611466812418*^9, {
+   3.9216114999468145`*^9, 3.921611594130929*^9}, {3.921612108611568*^9, 
+   3.921612110647298*^9}},
+ CellLabel->"In[25]:=",ExpressionUUID->"9154646e-84b4-46b3-a5f8-b6bd70d3c258"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   StyleBox["\<\"Solving Problem \"\>",
+    StripOnInput->False,
+    LineColor->RGBColor[0.5, 0, 0.5],
+    FrontFaceColor->RGBColor[0.5, 0, 0.5],
+    BackFaceColor->RGBColor[0.5, 0, 0.5],
+    GraphicsColor->RGBColor[0.5, 0, 0.5],
+    FontFamily->"Times",
+    FontSize->16,
+    FontWeight->Bold,
+    FontSlant->Italic,
+    FontColor->RGBColor[0.5, 0, 0.5]], "\[InvisibleSpace]", 
+   StyleBox["\<\"3\\n\"\>",
+    StripOnInput->False,
+    LineColor->RGBColor[0.5, 0, 0.5],
+    FrontFaceColor->RGBColor[0.5, 0, 0.5],
+    BackFaceColor->RGBColor[0.5, 0, 0.5],
+    GraphicsColor->RGBColor[0.5, 0, 0.5],
+    FontSize->14,
+    FontWeight->Bold,
+    FontColor->RGBColor[0.5, 0, 0.5]], 
+   "\[InvisibleSpace]", "\<\"The relative error for the case of \
+default-precision computation is: \"\>", "\[InvisibleSpace]", 
+   TagBox[
+    StyleBox["0.006272301812072812`",
+     ShowSpecialCharacters->False,
+     ShowStringCharacters->True,
+     NumberMarks->True],
+    FullForm], 
+   "\[InvisibleSpace]", "\<\"%\\nThe relative error for the case of \
+high-precision computation is: \"\>", "\[InvisibleSpace]", 
+   "0.00627230173067260095135582151957908407`10.", 
+   "\[InvisibleSpace]", "\<\"%\\nHigh precision computation reduces the error \
+by \"\>", "\[InvisibleSpace]", "8.140021122426955`*^-11", 
+   "\[InvisibleSpace]", "\<\"\\nPrecisions of exact and approximate \
+soluations, obtained with default settings,\\n\\tare \"\>", 
+   "\[InvisibleSpace]", "MachinePrecision", 
+   "\[InvisibleSpace]", "\<\" and \"\>", "\[InvisibleSpace]", 
+   "MachinePrecision", 
+   "\[InvisibleSpace]", "\<\" respectively\\nPrecisions of exact and \
+approximate soluations, obtained with high-precision computations,\\n\\tare \
+\"\>", "\[InvisibleSpace]", "26.450536923763018`", 
+   "\[InvisibleSpace]", "\<\" and \"\>", "\[InvisibleSpace]", "30.`", 
+   "\[InvisibleSpace]", "\<\" respectively\"\>"}],
+  SequenceForm[
+   Style["Solving Problem ", 
+    RGBColor[0.5, 0, 0.5], Bold, Italic, FontSize -> 16, FontFamily -> 
+    "Times"], 
+   Style["3\n", 
+    RGBColor[0.5, 0, 0.5], FontSize -> 14, Bold], 
+   "The relative error for the case of default-precision computation is: ", 
+   FullForm[0.006272301812072812], 
+   "%\nThe relative error for the case of high-precision computation is: ", 
+   0.00627230173067260095135582151957908407`10., 
+   "%\nHigh precision computation reduces the error by ", 
+   8.140021122426955*^-11, 
+   "\nPrecisions of exact and approximate soluations, obtained with default \
+settings,\n\tare ", MachinePrecision, " and ", MachinePrecision, 
+   " respectively\nPrecisions of exact and approximate soluations, obtained \
+with high-precision computations,\n\tare ", 26.450536923763018`, " and ", 30.,
+    " respectively"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.9217936982711115`*^9},
+ CellLabel->
+  "During evaluation of \
+In[25]:=",ExpressionUUID->"246631ee-c428-4657-8dc0-38ae43664c23"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{"integralPrec", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      SubsuperscriptBox["\[Integral]", "0", "\[Infinity]"], 
+      RowBox[{
+       FractionBox[
+        RowBox[{
+         FractionBox["3742", "1000"], "*", 
+         SuperscriptBox["10", "8"]}], 
+        RowBox[{
+         SuperscriptBox["\[Lambda]", "5"], 
+         RowBox[{"(", 
+          RowBox[{
+           SuperscriptBox["\[ExponentialE]", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{
+               FractionBox["14388", "10000"], "*", 
+               SuperscriptBox["10", "4"]}], ")"}], "/", 
+             RowBox[{"(", 
+              RowBox[{"\[Lambda]", "*", "500"}], ")"}]}]], "-", "1"}], 
+          ")"}]}]], 
+       RowBox[{"\[DifferentialD]", "\[Lambda]"}], "\n", 
+       RowBox[{"N", "[", 
+        RowBox[{
+         RowBox[{
+          FractionBox["5670", "1000"], "*", 
+          SuperscriptBox["10", 
+           RowBox[{"-", "8"}]], "*", 
+          SuperscriptBox["500", "4"]}], ",", "30"}], "]"}], "\n", 
+       "integralPrec"}]}], "-", 
+     RowBox[{"%", "\n", "exact"}]}], "=", 
+    RowBox[{
+     RowBox[{
+      FractionBox["5670", "1000"], "*", 
+      SuperscriptBox["10", 
+       RowBox[{"-", "8"}]], "*", 
+      SuperscriptBox["500", "4"], "\n", 
+      RowBox[{"N", "[", 
+       RowBox[{
+        FractionBox[
+         RowBox[{"integralPrec", "-", "exact"}], "exact"], ",", "30"}], "]"}],
+       "\n", "numerI"}], "=", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"NIntegrate", "[", 
+        RowBox[{
+         FractionBox[
+          RowBox[{
+           FractionBox["3742", "1000"], "*", 
+           SuperscriptBox["10", "8"]}], 
+          RowBox[{
+           SuperscriptBox["\[Lambda]", "5"], 
+           RowBox[{"(", 
+            RowBox[{
+             SuperscriptBox["\[ExponentialE]", 
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{
+                 FractionBox["14388", "10000"], "*", 
+                 SuperscriptBox["10", "4"]}], ")"}], "/", 
+               RowBox[{"(", 
+                RowBox[{"\[Lambda]", "*", "500"}], ")"}]}]], "-", "1"}], 
+            ")"}]}]], ",", 
+         RowBox[{"{", 
+          RowBox[{"\[Lambda]", ",", "0", ",", "\[Infinity]"}], "}"}], ",", 
+         RowBox[{"WorkingPrecision", "->", "30"}], ",", 
+         RowBox[{"PrecisionGoal", "->", "30"}]}], "]"}], "\n", 
+       FractionBox[
+        RowBox[{"numerI", "-", "exact"}], "exact"], "\n", "truePrec"}], "=", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Precision", "[", 
+         RowBox[{"N", "[", 
+          RowBox[{
+           RowBox[{
+            FractionBox["5670", "1000"], "*", 
+            SuperscriptBox["10", 
+             RowBox[{"-", "8"}]], "*", 
+            SuperscriptBox["500", "4"]}], ",", "30"}], "]"}], "]"}], "\n", 
+        "maxAbsUncertainty"}], "=", 
+       RowBox[{
+        RowBox[{"Abs", "[", 
+         RowBox[{"5.670", "*", 
+          SuperscriptBox["10", 
+           RowBox[{"-", "8"}]], "*", 
+          SuperscriptBox["500", "4"]}], "]"}], "*", 
+        RowBox[{"10", "^", 
+         RowBox[{"(", 
+          RowBox[{"-", "30"}], ")"}]}], "\[IndentingNewLine]", 
+        RowBox[{"(*", 
+         RowBox[{
+          RowBox[{
+          "For", " ", "max", " ", "abs", " ", "uncertainty", " ", "of", " ", 
+           "3.54375`*^-27"}], ",", " ", 
+          RowBox[{"precision", " ", "=", " ", "30"}]}], "*)"}], 
+        "\[IndentingNewLine]", 
+        RowBox[{"Precision", "[", "truePrec", "]"}], "\[IndentingNewLine]", 
+        RowBox[{"Precision", "[", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"integralPrec", "-", "truePrec"}], ")"}], "/", 
+          "truePrec"}], "]"}]}]}]}]}]}]}], "*)"}]], "Input",
+ CellChangeTimes->{{3.921543559122557*^9, 3.921543583087553*^9}, {
+   3.921543628042689*^9, 3.9215437434218206`*^9}, {3.9215437813671827`*^9, 
+   3.921543851432523*^9}, {3.921543890986712*^9, 3.921543950199792*^9}, {
+   3.92154400588441*^9, 3.92154406926298*^9}, {3.9215441107676377`*^9, 
+   3.921544184344805*^9}, {3.921544215502835*^9, 3.9215442277706337`*^9}, {
+   3.9215479839195886`*^9, 3.9215479996894484`*^9}, {3.92154831348563*^9, 
+   3.9215483552110453`*^9}, {3.9216010120959415`*^9, 3.9216010207655287`*^9}, 
+   3.921601063576354*^9, {3.9216011054849834`*^9, 3.9216011660040565`*^9}, {
+   3.921611619992329*^9, 
+   3.9216116340013485`*^9}},ExpressionUUID->"11ecfb05-f649-4b00-ac2c-\
+c74bab5378a3"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"Problem", " ", "4"}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"y", "=", 
+     FractionBox[
+      RowBox[{
+       RowBox[{"-", "b"}], "*", "e"}], 
+      SqrtBox[
+       RowBox[{"1", "-", 
+        SuperscriptBox["e", "2"]}]]]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"b", "=", 
+     RowBox[{"15", "/", "10"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"delta", "=", 
+     RowBox[{"5.1", "*", 
+      SuperscriptBox["10", 
+       RowBox[{"-", "28"}]]}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"acc", "=", 
+     RowBox[{"-", 
+      RowBox[{"Log10", "[", "delta", "]"}]}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"I1", "=", 
+     RowBox[{"NIntegrate", "[", 
+      RowBox[{
+       FractionBox[
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox["b", "2"]}], "e"}], "-", 
+           RowBox[{"(", 
+            RowBox[{"1", "-", "e"}], ")"}]}], ")"}], "2"], 
+        SqrtBox[
+         RowBox[{"1", "+", 
+          SuperscriptBox["y", "2"]}]]], ",", 
+       RowBox[{"{", 
+        RowBox[{"e", ",", "0", ",", "1"}], "}"}], ",", 
+       RowBox[{"AccuracyGoal", "->", "acc"}], ",", 
+       RowBox[{"WorkingPrecision", "->", 
+        RowBox[{"acc", "+", "1"}]}]}], "]"}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"I2", "=", 
+     RowBox[{"NIntegrate", "[", 
+      RowBox[{
+       FractionBox[
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"b", 
+            SqrtBox[
+             RowBox[{"1", "-", 
+              SuperscriptBox["e", "2"]}]]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"1", "-", "e"}], ")"}], "*", "y"}]}], ")"}], "2"], 
+        SqrtBox[
+         RowBox[{"1", "+", 
+          SuperscriptBox["y", "2"]}]]], ",", 
+       RowBox[{"{", 
+        RowBox[{"e", ",", "0", ",", "1"}], "}"}], ",", 
+       RowBox[{"AccuracyGoal", "->", "acc"}], ",", 
+       RowBox[{"WorkingPrecision", "->", 
+        RowBox[{"acc", "+", "1"}]}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"s", "=", 
+     RowBox[{"I1", "+", 
+      RowBox[{
+       RowBox[{"13", "/", "10"}], "*", "I2"}]}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"Print", "[", 
+    RowBox[{
+     RowBox[{"Style", "[", 
+      RowBox[{
+      "\"\<Solving Problem \>\"", ",", "Purple", ",", "Bold", ",", "Italic", 
+       ",", 
+       RowBox[{"FontSize", "->", "16"}], ",", 
+       RowBox[{"FontFamily", "->", "\"\<Times\>\""}]}], "]"}], ",", 
+     RowBox[{"Style", "[", 
+      RowBox[{"\"\<4\\n\>\"", ",", "Purple", ",", 
+       RowBox[{"FontSize", "->", "14"}], ",", "Bold"}], "]"}], ",", 
+     "\"\<Deflection of the curved beam \[Delta](1.5) = \>\"", ",", " ", 
+     RowBox[{"N", "[", 
+      RowBox[{"s", ",", "12"}], "]"}], ",", " ", 
+     "\"\<\\nAccuracy of the obtained result is \>\"", ",", 
+     RowBox[{"Accuracy", "[", "s", "]"}], ",", 
+     "\"\<, while its precision is \>\"", ",", 
+     RowBox[{"Precision", "[", "s", "]"}], ",", 
+     "\"\<\\nComputed absolute uncertainty is \>\"", ",", 
+     SuperscriptBox["10", 
+      RowBox[{"-", 
+       RowBox[{"Accuracy", "[", "s", "]"}]}]], ",", " ", "\"\< and \>\"", ",",
+      " ", "\"\<\!\(\*SubscriptBox[\(\[Delta]\), \(actual\)]\) \[LessEqual] \
+\!\(\*SubscriptBox[\(\[Delta]\), \(required\)]\) is \>\"", ",", 
+     RowBox[{
+      SuperscriptBox["10", 
+       RowBox[{"-", 
+        RowBox[{"Accuracy", "[", "s", "]"}]}]], "<=", 
+      RowBox[{"5.1", "*", 
+       SuperscriptBox["10", 
+        RowBox[{"-", "28"}]]}]}], ",", 
+     "\"\<.\\nThe difference between \!\(\*SubscriptBox[\(\[Delta]\), \
+\(required\)]\) and \!\(\*SubscriptBox[\(\[Delta]\), \(actual\)]\) is \>\"", 
+     ",", 
+     RowBox[{
+      RowBox[{"5.1", "*", 
+       SuperscriptBox["10", 
+        RowBox[{"-", "28"}]]}], "-", 
+      SuperscriptBox["10", 
+       RowBox[{"-", 
+        RowBox[{"Accuracy", "[", "s", "]"}]}]]}], ",", 
+     "\"\<\\nActual relative uncertainty of the result is \>\"", ",", 
+     RowBox[{
+      SuperscriptBox["10", 
+       RowBox[{"-", 
+        RowBox[{"Accuracy", "[", "s", "]"}]}]], "/", "s"}]}], 
+    "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.9211453355016155`*^9, 3.921145348802247*^9}, {
+   3.921149144271274*^9, 3.921149394040346*^9}, 3.9215458669464064`*^9, 
+   3.921546049911005*^9, {3.921546108142145*^9, 3.921546113764419*^9}, {
+   3.9215461468055253`*^9, 3.9215462675676727`*^9}, 3.9215464014236746`*^9, {
+   3.9215464693657637`*^9, 3.9215467044746456`*^9}, {3.9216018666753035`*^9, 
+   3.921601923532503*^9}, {3.921601961581092*^9, 3.921602036481473*^9}, 
+   3.921602130114745*^9, {3.9216021961367216`*^9, 3.9216022033864307`*^9}, {
+   3.9216022525768213`*^9, 3.921602257324643*^9}, {3.9216028109517727`*^9, 
+   3.9216028113395624`*^9}, {3.9216034145536194`*^9, 3.921603621736936*^9}, {
+   3.9216116489932747`*^9, 3.9216116677355103`*^9}, {3.9216120753823566`*^9, 
+   3.921612081628135*^9}},
+ CellLabel->
+  "In[241]:=",ExpressionUUID->"f12aa971-061a-42c5-8388-6bdaebc282de"],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Accuracy", "[", "I2", "]"}], "\n", "precision"}], "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"-", 
+      RowBox[{"Log10", "[", 
+       RowBox[{"5.1", "*", 
+        RowBox[{
+         RowBox[{"10", "^", 
+          RowBox[{"(", 
+           RowBox[{"-", "28"}], ")"}]}], "/", 
+         RowBox[{"Abs", "[", 
+          RowBox[{"I1", "+", 
+           RowBox[{"1.3", "*", "I2"}]}], "]"}]}]}], "]"}]}], "\n", "s"}], "=", 
+    RowBox[{"I1", "+", 
+     RowBox[{
+      RowBox[{"13", "/", "10"}], "*", "I2", "\[IndentingNewLine]", 
+      RowBox[{"Accuracy", "[", "s", "]"}], "\[IndentingNewLine]", 
+      RowBox[{"Precision", "[", "s", "]"}], "\[IndentingNewLine]", 
+      SuperscriptBox["10", 
+       RowBox[{"-", 
+        RowBox[{"Accuracy", "[", "s", "]"}]}]], "\[IndentingNewLine]", 
+      RowBox[{
+       SuperscriptBox["10", 
+        RowBox[{"-", 
+         RowBox[{"Accuracy", "[", "s", "]"}]}]], "/", "s"}]}]}]}]}], 
+  "*)"}]], "Input",
+ CellChangeTimes->{{3.921602565377947*^9, 3.9216025809818068`*^9}, {
+  3.921610087525312*^9, 
+  3.921610092669097*^9}},ExpressionUUID->"c6e96234-c972-4898-8dcc-\
+85bc46bb9407"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"Problem", " ", "5"}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"z", "=", "0.5"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"y", "=", "0.15"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Integ", "=", 
+     RowBox[{"N", "[", 
+      RowBox[{
+       FractionBox["1", "\[Pi]"], 
+       RowBox[{
+        SubsuperscriptBox["\[Integral]", "0", "\[Pi]"], 
+        RowBox[{
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{
+           RowBox[{"-", "y"}], "*", 
+           RowBox[{"Cos", "[", "\[Theta]", "]"}]}]], 
+         RowBox[{"Cos", "[", 
+          RowBox[{"z", "*", 
+           RowBox[{"Sin", "[", "\[Theta]", "]"}]}], "]"}], 
+         RowBox[{"\[DifferentialD]", "\[Theta]"}]}]}]}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Bes", "=", 
+     RowBox[{"BesselJ", "[", 
+      RowBox[{"0", ",", 
+       SqrtBox[
+        RowBox[{
+         SuperscriptBox["z", "2"], "-", 
+         SuperscriptBox["y", "2"]}]]}], "]"}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"z", "=", 
+     RowBox[{"1", "/", "2"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"y", "=", 
+     RowBox[{"3", "/", "20"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"IntegPrec", "=", 
+     RowBox[{"N", "[", 
+      RowBox[{
+       RowBox[{
+        FractionBox["1", "\[Pi]"], 
+        RowBox[{
+         SubsuperscriptBox["\[Integral]", "0", "\[Pi]"], 
+         RowBox[{
+          SuperscriptBox["\[ExponentialE]", 
+           RowBox[{
+            RowBox[{"-", "y"}], "*", 
+            RowBox[{"Cos", "[", "\[Theta]", "]"}]}]], 
+          RowBox[{"Cos", "[", 
+           RowBox[{"z", "*", 
+            RowBox[{"Sin", "[", "\[Theta]", "]"}]}], "]"}], 
+          RowBox[{"\[DifferentialD]", "\[Theta]"}]}]}]}], ",", "21"}], 
+      "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"BesPrec", "=", 
+     RowBox[{"N", "[", 
+      RowBox[{
+       RowBox[{"BesselJ", "[", 
+        RowBox[{"0", ",", 
+         SqrtBox[
+          RowBox[{
+           SuperscriptBox["z", "2"], "-", 
+           SuperscriptBox["y", "2"]}]]}], "]"}], ",", "21"}], "]"}]}], ";"}], 
+   "\n", 
+   RowBox[{"Print", "[", 
+    RowBox[{
+     RowBox[{"Style", "[", 
+      RowBox[{
+      "\"\<Solving Problem \>\"", ",", "Purple", ",", "Italic", ",", "Bold", 
+       ",", 
+       RowBox[{"FontSize", "->", "16"}], ",", 
+       RowBox[{"FontFamily", "->", "\"\<Times\>\""}]}], "]"}], ",", 
+     RowBox[{"Style", "[", 
+      RowBox[{"\"\<5\\n\>\"", ",", "Purple", ",", 
+       RowBox[{"FontSize", "->", "14"}], ",", "Bold"}], "]"}], ",", 
+     "\"\<Expression: \!\(\*FractionBox[\(1\), \
+\(\[Pi]\)]\)\!\(\*SubsuperscriptBox[\(\[Integral]\), \(0\), \
+\(\[Pi]\)]\)\!\(\*SuperscriptBox[\(\[ExponentialE]\), \
+\(\(-y\)*Cos[\[Theta]]\)]\)Cos[z*Sin[\[Theta]]]\[DifferentialD]\[Theta] = \
+\!\(\*SubscriptBox[\(J\), \(0\)]\)(\!\(\*SqrtBox[\(\*SuperscriptBox[\(z\), \
+\(2\)] - \*SuperscriptBox[\(y\), \(2\)]\)]\)) is \>\"", ",", 
+     RowBox[{"Integ", "==", "Bes"}], ",", 
+     "\"\<\\nMachine-precision computations at y=0.15 and z=0.5 produce \
+error: \>\"", ",", 
+     RowBox[{"Integ", "-", "Bes"}], ",", 
+     "\"\<\\nHigh-precision computations at y=\!\(\*FractionBox[\(3\), \
+\(20\)]\) and z=\!\(\*FractionBox[\(1\), \(2\)]\) produce error: \>\"", ",", 
+     RowBox[{"IntegPrec", "-", "BesPrec"}], " ", ",", 
+     "\"\<\\nRequired precision of computations is \>\"", ",", 
+     RowBox[{"Precision", "[", "IntegPrec", "]"}], ",", "\"\< and \>\"", ",", 
+     RowBox[{"Precision", "[", "BesPrec", "]"}], ",", " ", 
+     "\"\< respectively.\>\"", ",", 
+     "\"\<\\nThe absolute uncertainty of the computations is \>\"", ",", 
+     RowBox[{"EngineeringForm", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Abs", "[", "IntegPrec", "]"}], "*", 
+        RowBox[{"10", "^", 
+         RowBox[{"-", "21"}]}]}], ",", "7"}], "]"}]}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.921149462314684*^9, 3.9211495754075375`*^9}, {
+   3.921149620400115*^9, 3.921149627791368*^9}, {3.921149663445386*^9, 
+   3.921149681699686*^9}, {3.9211497118514585`*^9, 3.9211497758980017`*^9}, 
+   3.921546727474105*^9, {3.9215920042549095`*^9, 3.921592004666788*^9}, 
+   3.9216080367738347`*^9, 3.921611688412058*^9, 3.9216117185747814`*^9, 
+   3.921611858025553*^9, {3.921612069069092*^9, 
+   3.921612070200987*^9}},ExpressionUUID->"edacc5c2-3bf7-4183-86ce-\
+869bf70eca6a"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"Problem", " ", "6"}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"ClearAll", "[", 
+    RowBox[{"diff", ",", "prec", ",", "diff2"}], "]"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"diff", "=", 
+     RowBox[{
+      RowBox[{"N", "[", 
+       RowBox[{
+        FractionBox["1", "\[Pi]"], ",", "60"}], "]"}], "-", 
+      RowBox[{
+       FractionBox[
+        SqrtBox["8"], "9801"], 
+       RowBox[{
+        UnderoverscriptBox["\[Sum]", 
+         RowBox[{"m", "=", "0"}], "6"], 
+        FractionBox[
+         RowBox[{
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"4", "m"}], ")"}], "!"}], 
+          RowBox[{"(", 
+           RowBox[{"1103", "+", 
+            RowBox[{"26390", "*", "m"}]}], ")"}]}], 
+         RowBox[{
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{"m", "!"}], ")"}], "4"], 
+          SuperscriptBox["396", 
+           RowBox[{"4", "*", "m"}]]}]]}]}]}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"prec", "=", 
+     RowBox[{"Precision", "[", "diff", "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"diff2", "=", 
+     RowBox[{
+      RowBox[{"N", "[", 
+       RowBox[{
+        FractionBox["1", "\[Pi]"], ",", "60"}], "]"}], "-", 
+      RowBox[{
+       FractionBox[
+        SqrtBox["8"], "9801"], 
+       RowBox[{
+        UnderoverscriptBox["\[Sum]", 
+         RowBox[{"m", "=", "0"}], "7"], 
+        FractionBox[
+         RowBox[{
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"4", "m"}], ")"}], "!"}], 
+          RowBox[{"(", 
+           RowBox[{"1103", "+", 
+            RowBox[{"26390", "*", "m"}]}], ")"}]}], 
+         RowBox[{
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{"m", "!"}], ")"}], "4"], 
+          SuperscriptBox["396", 
+           RowBox[{"4", "*", "m"}]]}]]}]}]}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"prec2", "=", 
+     RowBox[{"Precision", "[", "diff2", "]"}]}], ";"}], "\[IndentingNewLine]",
+    "\[IndentingNewLine]", 
+   RowBox[{"Print", "[", 
+    RowBox[{
+     RowBox[{"Style", "[", 
+      RowBox[{
+      "\"\<Solving Problem \>\"", ",", "Purple", ",", "Bold", ",", "Italic", 
+       ",", 
+       RowBox[{"FontSize", "->", "16"}], ",", 
+       RowBox[{"FontFamily", "->", "\"\<Times\>\""}]}], "]"}], ",", 
+     RowBox[{"Style", "[", 
+      RowBox[{"\"\<6\\n\>\"", ",", "Purple", ",", 
+       RowBox[{"FontSize", "->", "14"}], ",", "Bold"}], "]"}], ",", 
+     "\"\<\!\(\*FractionBox[\(1\), \(\[Pi]\)]\)-\!\(\*FractionBox[SqrtBox[\(8\
+\)], \(9801\)]\)\!\(\*UnderoverscriptBox[\(\[Sum]\), \(m = 0\), \
+\(6\)]\)\!\(\*FractionBox[\(\(\((4  m)\)!\) \((1103 + 26390  m)\)\), \
+\(\*SuperscriptBox[\((\(m!\))\), \(4\)] \*SuperscriptBox[\(396\), \(4  \
+m\)]\)]\) = \>\"", ",", "diff", ",", 
+     "\"\<\\nPrecision of the computations is \>\"", ",", "prec", ",", 
+     "\"\<.\\nWhile precision of the computations is still \>\"", ",", "prec",
+      ",", "\"\<\\nthe difference is decreased to \>\"", ",", "diff2"}], 
+    "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.9211501604663944`*^9, 3.921150167690613*^9}, {
+   3.9211510074958725`*^9, 3.9211511784278827`*^9}, {3.921548088072658*^9, 
+   3.921548132812686*^9}, {3.921548170739188*^9, 3.9215482681913247`*^9}, 
+   3.921548387084467*^9, {3.92159217419472*^9, 3.9215923619209538`*^9}, 
+   3.921603273876631*^9, {3.9216059563827305`*^9, 3.921605963996481*^9}, {
+   3.921607969055654*^9, 3.9216079695306177`*^9}, 3.9216081710664597`*^9, {
+   3.9216082120361547`*^9, 3.9216082208355675`*^9}, {3.921608267544261*^9, 
+   3.921608346028651*^9}, {3.9216083837967978`*^9, 3.921608465540773*^9}, 
+   3.921608521109742*^9, {3.9216085539821873`*^9, 3.921608816303995*^9}, {
+   3.9216096825652585`*^9, 3.9216097675784636`*^9}, {3.9216098147649717`*^9, 
+   3.921609822925295*^9}, {3.9216099150901814`*^9, 3.9216099194704475`*^9}, {
+   3.9216099740226717`*^9, 3.9216099886635103`*^9}, {3.921611730749402*^9, 
+   3.921611731111451*^9}, {3.921611989476864*^9, 3.9216120604223824`*^9}, {
+   3.92179341364174*^9, 3.9217934899506874`*^9}, {3.921793568318774*^9, 
+   3.921793579043299*^9}},
+ CellLabel->
+  "In[235]:=",ExpressionUUID->"96987efb-0dae-4049-8fa2-0a796bb2945d"]
+},
+WindowSize->{1268, 720},
+WindowMargins->{{0.5, Automatic}, {Automatic, 0.5}},
+Magnification:>0.9 Inherited,
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (July 24, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"29ccaaeb-1e20-401f-8762-594173ea03f8"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 220, 3, 25, "Input",ExpressionUUID->"33d62084-73c1-4df4-a970-c2ddfe877891"],
+Cell[CellGroupData[{
+Cell[803, 27, 2107, 49, 123, "Input",ExpressionUUID->"a938f2de-c67d-4362-9b49-b1704cb4c25a"],
+Cell[2913, 78, 1980, 46, 69, "Print",ExpressionUUID->"e65ade54-e540-41b5-9867-e8629663ac0d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4930, 129, 7343, 177, 456, "Input",ExpressionUUID->"81f23495-a601-42a7-9d31-a14715e96adf"],
+Cell[12276, 308, 4184, 82, 264, "Print",ExpressionUUID->"8b1e07d4-3bab-4484-b353-b449dfa6b9a0"]
+}, Open  ]],
+Cell[16475, 393, 4211, 112, 256, "Input",ExpressionUUID->"44ab8cad-6fc9-414d-bba1-575798b653a1"],
+Cell[20689, 507, 5062, 155, 365, "Input",ExpressionUUID->"9fb7594c-dd62-4805-8aca-6711c05c55a4"],
+Cell[CellGroupData[{
+Cell[25776, 666, 6767, 160, 451, "Input",ExpressionUUID->"9154646e-84b4-46b3-a5f8-b6bd70d3c258"],
+Cell[32546, 828, 2945, 67, 131, "Print",ExpressionUUID->"246631ee-c428-4657-8dc0-38ae43664c23"]
+}, Open  ]],
+Cell[35506, 898, 4419, 116, 330, "Input",ExpressionUUID->"11ecfb05-f649-4b00-ac2c-c74bab5378a3"],
+Cell[39928, 1016, 5120, 134, 316, "Input",ExpressionUUID->"f12aa971-061a-42c5-8388-6bdaebc282de"],
+Cell[45051, 1152, 1174, 33, 130, "Input",ExpressionUUID->"c6e96234-c972-4898-8dcc-85bc46bb9407"],
+Cell[46228, 1187, 4446, 111, 334, "Input",ExpressionUUID->"edacc5c2-3bf7-4183-86ce-869bf70eca6a"],
+Cell[50677, 1300, 4231, 102, 296, "Input",ExpressionUUID->"96987efb-0dae-4049-8fa2-0a796bb2945d"]
+}
+]
+*)
+
